@@ -457,3 +457,83 @@ position: relative;
   font-size: 13px;
   color: rgba(0,0,0,.5);}
 
+.Website_trafice{
+    /* background-color: #000; */
+    padding: 40px 60px;
+
+    background-image: url('../Images/Natual3.jfif'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    max-width:100%;
+
+}
+.Website_trafice_top1{
+text-align: center;
+}
+.Website_trafice_top1 h3{
+color: white;
+font-size: 20px;
+padding: 15px 0px;
+}
+.Website_trafice_top1 h2{
+    color: #fff;
+    font-family: "Roboto",Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+.Website_trafice_bottom{
+    padding: 20px 20px;
+  background-color: #FFFFFF8A;
+  border-radius: 15px  15px;
+  margin: 10px 0px;
+  max-width: 1100px;
+  /* max-width: 1100px; */
+  /* margin: 0px auto; */
+  margin: auto;
+}
+.Website_trafice_bottom1{
+    display: flex;
+    gap: 30px;
+    /* max-width: 900px; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+.Website_trafice_bottom2{
+    display: grid;
+  
+}
+
+.Website_trafice_bottom1 label{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}
+.Website_trafice_bottom1 label span{
+    color:#fe0000;
+}
+.Website_trafice_bottom1 input{
+    width: 300px;
+    padding: 10px 10px;
+    background-color: #EDEDED;
+
+}
+
+.Website_trafice_button {
+text-align: center;
+padding: 25px 0px;
+}
+.Website_trafice_button button{
+    padding: 10px 10px;
+    /* border: 0px solid black; */
+    background-color:#fe0000;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+transition: 0.3s;
+}
+.Website_trafice_button button:hover{
+    background-color: #d60000;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+}
