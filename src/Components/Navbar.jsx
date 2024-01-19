@@ -1,9 +1,9 @@
 import React from 'react'
 import {Navbar_logo} from '../Data/Navbar';
 import { Navbar_Data } from '../Data/Navbar';
-import { NavLink } from "react-router-dom";
 import '../Style/Style.css';
-
+import { Link } from 'react-router-dom';
+import { FaChevronDown } from "react-icons/fa";
 function Navbar() {
   return (
     <div className='Navbar'>
@@ -12,10 +12,10 @@ function Navbar() {
             Navbar_logo.map((Product,index)=>{
                 return(
                     <div className='Navbar_logo_1' key={index}>
-                        <a href='/'>
-                        <img src={Product.img}/>
-                        </a>
+                        
+                        
                    
+                   <Link to=""> <img src={Product.img}/></Link>
                 </div>
 
                 )
@@ -25,24 +25,25 @@ function Navbar() {
              
         </div>
 
-        <div className='Navmenu_full'>{
-            Navbar_Data.map((Product,index)=>{
-                return(
-                    <div key={index} className='Navmenu'>
+        <div className='Navmenu_full'>
+            
+                    <div  className='Navmenu'>
                       <ul >
-                        <li><a className='Navmenu_Navlink' href='/'>{Product.li}</a>
-                        </li>
+                        <li> <Link  className='Navmenu_Navlink'>Home</Link></li>
+                        <li> <Link  className='Navmenu_Navlink'>About</Link></li>
+                        <li className='Navmenu_Navlink_arrow'> <Link  className='Navmenu_Navlink'>Services</Link> <span><FaChevronDown /></span></li>
+                        <li> <Link  className='Navmenu_Navlink'>Portfolio</Link></li>
+                        <li> <Link  className='Navmenu_Navlink'>Blog</Link></li>
+                        <li> <Link  className='Navmenu_Navlink'>Contact Us</Link></li>
                         
                       </ul>
                     </div>
 
-                )
-            })
+          
             
-            }
  <div className='Navbar_button'>
             <button>Book Consultation</button>
-            <i class='bx bx-search-alt-2'></i>
+          <Link> <i class='bx bx-search-alt-2'></i></Link> 
 
         </div>
 

@@ -1,31 +1,44 @@
 
 
+@media screen and (max-width:1120px) {
 
+    .Navmenu_full {
+        display: none;
+    }
+      
 
-/* @media only screen and (min-width:840px) {
-    .Contect_right2 h1 {
+    .Location {
+        display: flex;
+        gap: 10px;
+        padding: 50px 20px;
+        background-color: #374a5e;
         color: #fff;
-        font-size: 38px;
-        font-weight: 700;
-        padding: 41px 0px;
-        line-height: 38px;
-       
-        text-align: start;
       }
-} */
 
-
+}
 
 
 
 
 
 @media screen and (max-width:840px) {
+    .Works {
+        background-color: #F3F5F9;
+        padding: 50px 30px;
+      }
+      .Website_trafice {
+        background-color: #000;
+        padding: 20px 40px;}
+
+
+        .Servises_top_right {
+            padding: 0px 30px;
+          }
     .Contect {
        
         gap: 30px;
         padding: 40px 40px;}
-  }
+  
   .Contect_right2 h1 {
     color: #fff;
     font-size: 38px;
@@ -35,7 +48,20 @@
    
     text-align: start;
   }
-
+  .Location {
+    display: flex;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #374a5e;
+    color: #fff;
+    /* gap: ; */
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .Fother{
+    padding: 10px 10px;
+  }
+}
 
 
   @media  screen and (max-width:760px) {
@@ -65,6 +91,19 @@
       .Contect_right3 {
         padding: 0px 30px ;
     }
+    .Servises_top {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex: wrap; */
+      }
+    .Fother {
+        padding: 10px 10px;
+        display: flex;
+        /* flex: ; */
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
   }
 
 
@@ -88,6 +127,59 @@
       }
 
 
+
+
+      .Project {
+        background-color: #F3F5F9;
+        padding: 30px 30px;
+      }
+
+
+
+
+      .Fother {
+        padding: 10px 60px;
+        display: flex;
+        /* flex: ; */
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+
   }
 
 
+
+  @media  screen and (max-width:410px) {
+    .Website_trafice_bottom1 input {
+        width: 250px;
+        padding: 10px 10px;
+        background-color: #EDEDED;
+        outline: none;
+      }
+    
+  }
+  
+
+
+
+  @media  screen and (max-width:370px) {
+    .Fother_map1 iframe {
+        border-radius: 10px;
+        width: 300px;
+        outline: none;
+        max-width: 375px;
+      }
+  }
+
+
+  @media  screen and (max-width:370px) {
+    .Fother_map1 iframe {
+        border-radius: 10px;
+        width: 250px;
+        outline: none;
+    }
+  }
+
+
+ 

@@ -22,14 +22,35 @@ padding: 20px 10px;
 }
 .Navmenu ul{
     /* text-decoration: none; */
+    display: flex;
 }
 .Navmenu ul li{
     /* display: flex; */
     list-style-type: none;
-    padding: 0px 8px
-    ;
+    padding: 0px 8px ;
+    display: flex;
    
 }
+.Navmenu ul li span {
+
+position: relative;
+  top: 7px;
+  left: 6px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.Navmenu_Navlink_arrow:hover{
+    color: #fe0000;
+}
+
+
+
+
+/* position: relative;
+  top: 7px;
+  left: 6px;
+  font-size: 13px;
+} */
 .Navmenu_Navlink{
     text-decoration: none;
     color: #4a4d52;
@@ -164,7 +185,7 @@ padding: 50px 80px;
 }
 .Servises_top {
     display: flex;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 
 }
 .Servises_top_left_img{
@@ -806,14 +827,28 @@ opacity: 1;
 .Fother{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    padding: 10px 120px;
+    background-color: #fe0000;
 }
 
 
 .Fothers{
+   
+    /* back */
+    color: white;
 
 }
 .Fothers_1{
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+  width: 40px;
+  padding: 3px 30px;
+  padding-left: 5px;
+  padding-right: 29px;
+  background: #fe0000;
+  
+ 
     
 }
 .Fother_arrow_icon{
@@ -821,5 +856,182 @@ opacity: 1;
     color: #fe0000;
     background-color:black;
     border-radius: 50%;
+    background-color: white;
 
+}
+
+.Fothers_2{
+
+}
+.Fothers_2 ul{
+    display: flex;
+    gap: 13px;
+    color: white;
+}
+
+.Fothers_2 ul{
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* ---------------Location------------ */
+.Location{
+    display: flex;
+    gap: 10px;
+    padding: 50px 110px;
+    background-color: #374a5e;
+    color: #fff;
+}
+
+.Location_Detail1{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    max-width: 233px;
+    padding: 13px 7px;
+    background-color: #fff;
+    /* color: #fff; */
+
+}
+.Location_Detail{
+    color: white;
+}
+.Location_Detail1 img{
+max-width:96%;
+}
+.Location_Detail2 h1{
+font-weight: 500;
+padding: 10px 0px;
+font-size: 16px;
+}
+
+.Location_Detai3{
+    display: flex;
+    gap: 7px;
+    font-size: 16px;
+    align-items: center;
+}
+.Location_Detai4{
+    display: flex;
+    gap: 7px;
+    /* font-size: 16px; */
+    /* justify-content: center; */
+    align-items: center;
+    padding: 4px 0px;
+}
+.Location_Detai4 span{
+    font-size: 24px;
+}
+.Location_Detai4{
+    font-size: 17px;
+
+}
+.Location_Detai5{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    /* border-radius: 50%; */
+    padding: 30px 0px;
+   
+}
+
+.Location_Detai5 span{
+    border: 1px solid #5e6d7e;
+    padding: 8px 9px;
+    border-radius: 50%;
+    height: 36px;
+    object-fit: contain;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 37px;
+
+}
+.Location_Detai5 span:hover{
+    /* color: #fe0000; */
+    background-color: #5e6d7e;
+
+}
+.fother_Nav{
+
+}
+.fother_Nav h1{
+    color: #fff;
+  /* font-family: "Lato",Sans-serif; */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.fother_Nav ul{
+    /* display: block; */
+
+}
+.fother_Nav ul li{
+    padding: 10px 0px;
+
+}
+.fother_SubScribe{
+
+}
+.fother_SubScribe h1{
+    color: #fff;
+  /* font-family: "Lato",Sans-serif; */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+
+}
+.fother_SubScribe p{
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.fother_Email{
+
+}
+.fother_Email h3{
+    font-size: 13px;
+    padding: 3px 0px;
+
+}
+.fother_Email h3 span{
+    color:#d60000;
+} 
+
+.fother_Email input{
+    padding: 7px 10px;
+    background-color: #EDEDED;
+    width: 270px;
+
+}
+.fother_Email button{
+    /* border: 1px solid black; */
+    padding: 10px 15px;
+    background-color:#fe0000;
+    border-radius: 50px;
+    font-size: 13px;
+    margin: 15px 0px;
+}
+
+
+.Fother_map{
+
+}
+.Fother_map h1{
+    color: #fff;
+    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.Fother_map1{
+    outline: none;
+    padding: 10px 0px;
+}
+
+.Fother_map1 iframe{
+    border-radius: 10px;
+    width: 330px;
+    outline: none;
 }
