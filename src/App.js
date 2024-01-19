@@ -13,6 +13,7 @@ import Client_love from './Components/Client_love';
 import Website_trafice from './Components/Website_trafice';
 import Contect from './Components/Contect';
 import Blogs from './Components/Blogs';
+import Fother from './Components/Fother';
 function App() {
   return (
  <>
@@ -25,7 +26,8 @@ function App() {
  <Client_love/>
 
  <Contect/>
- <Blogs/>
+ {/* <Blogs/> */}
+ <Fother/>
  </>
   );
 }

@@ -502,7 +502,11 @@ padding: 15px 0px;
 }
 .Website_trafice_bottom2{
     display: grid;
+    border: none;
   
+}
+.Website_trafice_bottom2 span{
+    color: red;
 }
 
 .Website_trafice_bottom1 label{
@@ -533,10 +537,14 @@ padding: 25px 0px;
     font-size: 14px;
     border-radius: 50px;
 transition: 0.3s;
+outline: none;
+cursor: pointer;
 }
 .Website_trafice_button button:hover{
     background-color: #d60000;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+
+    outline: none;
 
 }
 
@@ -791,5 +799,27 @@ box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
 }
 .Blogs_bottom1:hover .eyes{
 opacity: 1;
+
+}
+
+
+.Fother{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.Fothers{
+
+}
+.Fothers_1{
+    
+}
+.Fother_arrow_icon{
+    font-size: 25px;
+    color: #fe0000;
+    background-color:black;
+    border-radius: 50%;
 
 }
