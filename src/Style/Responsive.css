@@ -1,5 +1,15 @@
 
 
+@media screen and (max-width:1200px) {
+  .Web_Dev1 {
+    display: flex;
+    gap: 90px;
+    padding: 40px 40px;
+    align-items: center;
+  }
+
+}
+
 @media screen and (max-width:1120px) {
 
     .Navmenu_full {
@@ -57,6 +67,15 @@
     /* gap: ; */
     flex-wrap: wrap;
     justify-content: start;
+  }
+
+  .Web_Dev1 {
+    display: flex;
+    gap: 20px;
+    padding: 40px 10px;
+    align-items: center;
+    /* flex: ; */
+    flex-wrap: wrap;
   }
   .Fother{
     padding: 10px 10px;
@@ -134,8 +153,38 @@
         padding: 30px 30px;
       }
 
+      .Web_Dev2 {
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        max-width: 550px;
+        padding: 20px 20px;
+        border-radius: 10px;
+      }
+      .Web_Dev2 h1 {
+        /* color: var( --e-global-color-59ff7a0 ); */
+        font-family: "Poppins", Sans-serif;
+        font-size: 21px;
+        font-weight: 1000;
+        color: #fe0000;
+      }
 
+      .Web_Dev2 h2 {
+        font-size: 19px;
+        font-weight: 400;
+        color: #575757;
+        padding: 8px 6px;
+      }
+      .Web_Dev3 h3 {
+        font-size: 18px;
+        font-weight: 400;
+        color: #575757;
+      }
 
+      .web_dev_img img {
+        width: 70%;
+        height: auto;
+        margin: auto;
+      }
 
       .Fother {
         padding: 10px 60px;
