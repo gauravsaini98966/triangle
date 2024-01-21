@@ -56,11 +56,11 @@ function Navbar() {
               </div>
             </div>
             <li>
-              {" "}
+             
               <Link className="Navmenu_Navlink">Home</Link>
             </li>
             <li>
-              {" "}
+            
               <Link className="Navmenu_Navlink">About</Link>
             </li>
 
@@ -69,22 +69,22 @@ function Navbar() {
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
             >
-              <Link className="Navmenu_Navlink">Services</Link>{" "}
+              <Link className="Navmenu_Navlink Navlink-services">Services</Link>{" "}
               <span>
                 <FaChevronDown />
               </span>{" "}
             </li>
 
             <li>
-              {" "}
+            
               <Link className="Navmenu_Navlink">Portfolio</Link>
             </li>
             <li>
-              {" "}
+              
               <Link className="Navmenu_Navlink">Blog</Link>
             </li>
             <li>
-              {" "}
+              
               <Link className="Navmenu_Navlink">Contact Us</Link>
             </li>
           </ul>

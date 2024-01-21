@@ -15,11 +15,12 @@ import Blogs from "./Components/Blogs";
 import Fother from "./Components/Fother";
 import Locations from "./Components/Location";
 import Web_dev from "./Components/Web_dev";
+import Hero from "./Components/Hero";
 function App() {
   return (
     <>
       <Navbar />
-      
+      <Work />
       <Website_trafice />
 
       <Servises />
@@ -29,9 +30,10 @@ function App() {
       <Contect />
       <Blogs />
       <Locations />
-      <Work />
+     
       <Web_dev/>
       <Fother />
+      {/* <Hero/> */}
     </>
   );
 }
