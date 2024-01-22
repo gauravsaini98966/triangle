@@ -6,37 +6,37 @@
 
 ]
 
-export const Navbar_Data=[
-    {
-        li:"Home",
+// export const Navbar_Data=[
+//     {
+//         li:"Home",
 
-    },
-    {
-        li:"About",
-    },
+//     },
+//     {
+//         li:"About",
+//     },
 
-    {
-    li:"Services"
+//     {
+//     li:"Services"
 
-    }
-    ,
-    {
-        li:"Portfolio"
+//     }
+//     ,
+//     {
+//         li:"Portfolio"
     
-        }
-        ,
-        {
-            li:"Blog"
+//         }
+//         ,
+//         {
+//             li:"Blog"
         
-            }
-            ,
+//             }
+//             ,
 
-            {
-                li:"Contact Us"
+//             {
+//                 li:"Contact Us"
             
-                }
-                ,
+//                 }
+//                 ,
 
                 
     
-]
+// ]

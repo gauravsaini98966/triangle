@@ -76,9 +76,19 @@
     align-items: center;
     /* flex: ; */
     flex-wrap: wrap;
+    justify-content: center;
   }
   .Fother{
     padding: 10px 10px;
+  }
+
+  .Our_Work_bottom {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 20px;
+    flex-wrap: wrap;
   }
 }
 
@@ -156,7 +166,7 @@
       .Web_Dev2 {
         border: 1px solid black;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-        max-width: 550px;
+        min-width: 374px;
         padding: 20px 20px;
         border-radius: 10px;
       }
@@ -192,6 +202,15 @@
         /* flex: ; */
         flex-wrap: wrap;
         gap: 20px;
+      }
+
+      .Our_Work_bottom {
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px 20px;
+        flex-wrap: wrap;
       }
 
 

@@ -158,7 +158,7 @@ function Contect() {
     email: '',
     fullName: '',
     contact: '',
-    services: [],
+    services:[],
     message: '',
   });
   const [errors, setErrors] = useState({});
@@ -180,17 +180,17 @@ function Contect() {
     // Simple validation
     const newErrors = {};
     if (formValues.email.trim() === '') {
-      newErrors.email = 'Email Address is required';
+      newErrors.email = 'This field is required. Please input a valid email.';
     } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
       newErrors.email = 'Invalid email format';
     }
 
     if (formValues.fullName.trim() === '') {
-      newErrors.fullName = 'Full Name is required';
+      newErrors.fullName = 'This field is required. Please input your name.';
     }
 
     if (formValues.contact.trim() === '') {
-      newErrors.contact = 'Contact Number is required';
+      newErrors.contact = 'This field is required. Please input a phone number.';
     } else if (!/^\d+$/.test(formValues.contact)) {
       newErrors.contact = 'Invalid contact number';
     }
