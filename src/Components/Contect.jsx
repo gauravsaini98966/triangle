@@ -220,7 +220,7 @@ function Contect() {
 
   return (
     <div className="Contect">
-      
+       
       <div className="Contect_left">
         <form onSubmit={handleSubmit}>
           <div className="Contect_left_1">
@@ -257,22 +257,8 @@ function Contect() {
             <h2>
               Select Services <span>*</span>
             </h2>
-            {/* <div className="Contect_left_checkbox">
-              {Contect_Data[0].li.map((service, index) => (
-                <div className="Contect_checkbox" key={index}>
-                  <input
-                    type="checkbox"
-                    name="services"
-                    value={service}
-                    checked={formValues.services.includes(service)}
-                    onChange={handleChange}
-                  />
-                  <label>{service}</label>
-                </div>
-              ))}
-              <span className="error">{errors.services}</span>
-            </div> */}
-<div className="Contect_left_checkbox">
+           
+            <div className="Contect_left_checkbox">
             <div className=" Contect_checkbox">
               <input type="checkbox" />
               <label>Website Development</label>

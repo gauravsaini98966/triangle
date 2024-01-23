@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:sans-serif,'poppins' ;
+    font-family: 'poppins',sans-serif ;
     scroll-behavior: smooth;
 }
 
@@ -1140,6 +1140,7 @@ font-size: 16px;
     padding: 7px 10px;
     background-color: #EDEDED;
     width: 270px;
+    color: black;
 
 }
 .fother_Email button{
@@ -1588,3 +1589,137 @@ padding: 18px 0px;
     background-color: #7a7a7a;
     
   }
+
+
+  /* ----------------contect-appotment------------- */
+  .Contect_appotment{
+    display: flex;
+    gap: 110px;
+    padding: 60px 121px;
+    /* justify-content: ce; */
+    /* align-items: center; */
+  }
+  .Contect_appotment_1{
+
+  }
+  .Contect_appotment_1 h1{
+    color: #FF4C4C;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+font-size: 14px;
+  }
+  .Contect_appotment_1  h2{
+    color:#FE0000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0px;
+  }
+
+  .Contect_appotment_2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .Contect_appotment_2 {
+color: #FE0000;
+font-weight: 600;
+  }
+  .Contect_appotment_2 span{
+
+  }
+  .Contect_appotment_2 h3{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+  }
+  .Contect_appotment_6 h4{
+    font-size: 13px;
+    padding: 10px 27px;
+  }
+  .Contect_appotment_3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FE0000;
+  }
+  .Contect_appotment_3  h4{
+text-transform: uppercase;
+letter-spacing: 5px;
+font-size: 13px;
+font-weight: 600;
+  }
+
+  .Contect_appotment_4{
+    padding: 10px 26px;
+    
+  }
+  .Contect_appotment_4 span{
+    font-size: 14px;
+    font-weight: 600;
+
+  }
+  .Contect_appotment_5 {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+
+  }
+  .Contect_appotment_5 span{
+    font-size: 15px;
+  }
+  .Contect_appotment_5 h3{
+    font-size: 14px;
+  }
+
+  .Contect_appotment_6{
+    display: flex;
+    gap: 20px;
+    padding: 13px 12px;
+  }
+  .Contect_appotment_6 span:nth-child(1){
+    font-size: 20px;
+    /* border: 1px solid black; */
+    padding: 5px ;
+    border-radius: 50px;
+ color: white;
+ background:blue;
+  }
+  .Contect_appotment_6 span:nth-child(2){
+    font-size: 20px;
+    /* border: 1px solid black; */
+    padding: 5px ;
+    border-radius: 50px;
+    color: white;
+    background-color: #000;
+
+  }
+  .Contect_appotment_6 span:nth-child(3){
+    font-size: 20px;
+    /* border: 1px solid black; */
+    padding: 5px ;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+  }
+.Contect_left_all h1{
+    /* border: 1px solid black; */
+    padding: 0px 20px;
+    color: #FE0000;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.Contect_left_all1 {
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    /* padding: 20px 20px; */
+    margin: 20px 20px;
+
+}
+.Contect_left1 {
+    max-width: 550px;
+    padding:20px 10px ;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 12px;
+}

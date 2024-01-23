@@ -2,7 +2,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoMdContact } from "react-icons/io";
 import { SlScreenSmartphone } from "react-icons/sl";
 import { MdEmail } from "react-icons/md";
-
+import { MdOutlinePhoneAndroid } from "react-icons/md";
 
  export const Contect_appotment_Data =[
     {
@@ -14,9 +14,9 @@ h4:"3215 Sector 14 Part - 2, Hisar, Haryana - 125001 ",
 contact:<IoMdContact />,
 contact_name:"Contact",
 phone:"Phone:",
-phone_icon:<SlScreenSmartphone />,
+phone_icon:<MdOutlinePhoneAndroid />,
 phone_no:"+91 7056359259",
-phone_icon:<SlScreenSmartphone />,
+phone_icon:<MdOutlinePhoneAndroid />,
 phone_no:"+91 9817024516",
 Email:"Email:",
 email_icon:<MdEmail />,
