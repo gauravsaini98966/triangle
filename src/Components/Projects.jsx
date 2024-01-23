@@ -24,7 +24,7 @@ function Projects() {
                     <h2>{product.name}</h2>
                     <h3>{product.name2}</h3>
                     <div className='project_bottom1_button'>
-                        <button>{product.button1}</button>
+                  <a href='https://www.godaddy.com' target='_black'><button>{product.button1}</button></a>      
                         <button>{product.button2}</button>
                     </div>
 

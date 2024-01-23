@@ -78,16 +78,16 @@ function Location() {
         <h1>Useful Links</h1>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
             <Link to="/">About</Link>
           </li>
           <li>
-            <Link to="/">Services</Link>
+            <Link to="/ServicesNavbar">Services</Link>
           </li>
           <li>
-            <Link to="/">Portfolio</Link>
+            <Link to="/Portfolio_Navbar">Portfolio</Link>
           </li>
           <li>
             <Link to="/">Terms and Conditions</Link>

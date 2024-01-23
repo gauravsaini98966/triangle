@@ -1,7 +1,7 @@
 import React from 'react'
 import Portfolio from './Portfolio_img'
 import Projects from './Projects'
-import Contect from '../Components/Contect'
+import Contect from './Contect'
 function portfolio_Navbar() {
   return (
     <div>

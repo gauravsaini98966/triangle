@@ -133,6 +133,104 @@ background-color: #d60000;
 .Mobile_icon span{
     font-size: 25px;
 }
+
+/* --------------Hero---------- */
+
+/* .main-section{
+    height: 600px;
+    position: relative;
+    bottom: 150px;
+  
+  }
+  .arrow-animation{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .main-left{
+   align-items: center;
+   position: relative;
+   top: 100px;
+   left: 65px;
+   width: 550px;
+  }
+  .main-left h1{
+    color: red;
+    font-size: 36px;
+    
+  }
+  
+  .main-left h2{
+    font-size: 36px;
+    color: rgb(68, 68, 68);
+    margin-top: 24px ;
+  }
+  
+  .main-left-btn button{
+    margin-top: 45px;
+    margin-left: 5px;
+    background-color: red;
+    color: white;
+    border-radius:20px;
+    border: none;
+    height: 38px;
+    width: 128px;
+    font-size: 17px;
+  
+  }
+  
+  .main-right img{
+  height: 450px;
+  } */
+
+
+  .arrow-animation{
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    gap: 80px;
+    padding: 0px 95px;
+  }
+  .Main-left_1{
+    max-width: 600px;
+    line-height: 40px;
+
+  }
+  .Main-left_1 h1{
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: red;
+  }
+
+  .Main-left_1 h2{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#3C3C3C;
+    padding: 15px 0px;
+    line-height: 45px;
+    text-transform:capitalize;
+  }
+  .main-left-btn{
+padding: 20px 0px;
+  }
+  .main-left-btn button{
+    /* border: 1px solid black; */
+    padding: 0px 22px;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+
+  .main-righ{
+    padding-bottom: 20px;
+  }
+  .main-righ_1 video{
+    width: 103%;
+    height: 500px;
+  }
 /* ////////////-----work----- */
 
 .Works{
@@ -1357,4 +1455,136 @@ padding: 18px 0px;
     text-align: center;
     background-image: url(../Images/portfolio_bgr\ \(1\).webp);
     padding: 30px 0px 30px 0px;
+  }
+
+
+  /* ----------About--------- */
+
+
+  .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Roboto", Sans-serif;
+    background-color: white;
+    /* width: 70%; */
+    /* max-width: 100%; */
+    align-items: center;
+    padding: 50px;
+  }
+  .upr{
+    width: 50%;
+  }
+  .uprh1{
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .uprh2{
+    color: red;
+    font-size: 32px;
+    font-weight: 500;
+    gap: 6px;
+  }
+  .uprh3{
+     color:#7a7a7a;
+  }
+  .photo{
+    width: 70%;
+  
+  }
+  .aboutmid{
+    background-image:url(../Images/portfolio_bgr\ \(1\).webp);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+    color: #FFFFFF;
+  }
+  .icons{
+    display: flex;
+  
+  font-size: 20px;
+
+  font-weight: 600;
+  gap: 180px;
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap;
+   
+    
+  }
+  .icons h2{
+    font-size: 21px;
+  }
+  .icons svg{
+    font-size: 115px;
+  }
+  .texth2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* flex-direction: row; */
+  }
+  .texth3{
+    color:#7a7a7a;
+  }
+  .aboutmid1{
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .aboutmid2{
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .icon{
+  font-size: 90px;
+  padding: 20px;
+  border-radius: 50%;
+  border-radius: none;
+  background-color: #7a7a7a;
+  
+  }
+  .lower{
+    display: flex;
+  }
+  .lowerup{
+    width: 50%;
+    padding-left: 50px;
+  }
+  .lowerdwon{
+    width: 50%;
+    padding-top: 70px;
+  }
+  .upr{
+    padding: 0%;
+  }
+  .uprh3{
+    padding: 15px 146px 30px 0px;
+    color: #565656;
+  }
+  .uprh2{
+     color: #fe0000;
+  }
+  .pic{
+    padding: 40px 0px 40px 32px ;
+    width: 70%;
+  }
+  .button{
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    background-color: #FE0000;
+    font-size: 16px;
+    padding: 12px 33px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    gap: 4px;
+    
+  }
+  .button:hover {
+    background-color: #7a7a7a;
+    
   }

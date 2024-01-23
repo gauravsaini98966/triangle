@@ -179,3 +179,57 @@
 // }
 
 // export default Hero;
+
+import {Hero_Data} from '../Data/Hero_Data'
+import React from 'react'
+import {Hero_Video} from '../Data/Hero_Data'
+import { Link } from 'react-router-dom'
+import Contect_Navbar from './Contect_Navbar'
+function Hero() {
+  return (
+    <div>
+        <section class="main-section">
+<div class="arrow-animation">
+  <div class="main-left">{
+    Hero_Data.map((Product,index)=>{
+        return(
+            <div className='Main-left_1' key={index}>
+                  <h1>{Product.h1}</h1>
+     <h2>{Product.h2}</h2>
+     <div class="main-left-btn">
+    <Link to='/Contect_Navbar'><button>{Product.button}</button></Link>  
+            </div>
+          
+     </div>
+        )
+    })
+    
+  }
+     
+  </div>
+  <div class="main-right"> {
+        Hero_Video.map((Product,index)=>{
+            return(
+                <div className='main-righ_1' key={index}>
+                <video autoPlay loop muted playsInline>
+                        <source src={Product.video} type="video/mp4"/>
+                     </video>
+                
+                            </div>
+            )
+           
+
+        })}
+     
+  </div>
+</div>
+</section>
+
+    </div>
+  )
+}
+
+export default Hero
+
+
+
