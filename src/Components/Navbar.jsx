@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Navbar_logo } from "../Data/Navbar";
-import { Navbar_Data } from "../Data/Navbar";
+// import { Navbar_Data } from "../Data/Navbar";
 import "../Style/Style.css";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
-import { IoReorderThree } from "react-icons/io5";
-import { FaPlus } from "react-icons/fa6";
+// import { IoReorderThree } from "react-icons/io5";
+// import { FaPlus } from "react-icons/fa6";
 function Navbar() {
-
   const [showServices, setShowServices] = useState(false);
 
   const handleMouseOver = () => {
@@ -23,9 +22,8 @@ function Navbar() {
         {Navbar_logo.map((Product, index) => {
           return (
             <div className="Navbar_logo_1" key={index}>
-              <Link to="">
-                {" "}
-                <img src={Product.img} />
+              <Link to="/home">
+                <img src={Product.img} alt="" />
               </Link>
             </div>
           );
@@ -35,60 +33,67 @@ function Navbar() {
       <div className="Navmenu_full">
         <div className="Navmenu">
           <ul>
-          {showServices && (
-            <div className="Navmenu_servises" >
-              <div className="Navmenu_servises1">
-                <Link>
-                  <span>Website Development</span>
-                </Link>
-                <hr></hr>
+            {showServices && (
+              <div className="Navmenu_servises">
+                <div className="Navmenu_servises1">
+                  <Link>
+                    <span>Website Development</span>
+                  </Link>
+                  <hr></hr>
+                </div>
+                <div className="Navmenu_servises2">
+                  <Link>
+                    <span>App Development</span>
+                  </Link>
+                  <hr></hr>
+                </div>
+                <div className="Navmenu_servises3">
+                  <Link>
+                    <span>Digital Marketing</span>
+                  </Link>
+                  <hr></hr>
+                </div>
               </div>
-              <div className="Navmenu_servises2">
-                <Link>
-                  <span>App Development</span>
-                </Link>
-                <hr></hr>
-              </div>
-              <div className="Navmenu_servises3">
-                <Link>
-                  <span>Digital Marketing</span>
-                </Link>
-                <hr></hr>
-              </div>
-            </div>
-          )}
+            )}
             <li>
-             
-              <Link to='/Home' className="Navmenu_Navlink">Home</Link>
+              <Link to="/home" className="Navmenu_Navlink">
+                Home
+              </Link>
             </li>
             <li>
-            
-              <Link to='/About' className="Navmenu_Navlink">About</Link>
+              <Link to="/about" className="Navmenu_Navlink">
+                About
+              </Link>
             </li>
 
             <li
               className="Navmenu_Navlink_arrow"
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
-             
             >
-              <Link to='/ServicesNavbar' className="Navmenu_Navlink Navlink_Services-2">Services</Link>{" "}
+              <Link
+                to="/services"
+                className="Navmenu_Navlink Navlink_Services-2"
+              >
+                Services
+              </Link>{" "}
               <span>
                 <FaChevronDown />
               </span>{" "}
             </li>
 
             <li>
-            
-              <Link to="/Portfolio_Navbar" className="Navmenu_Navlink">Portfolio</Link>
+              <Link to="/portfolio" className="Navmenu_Navlink">
+                Portfolio
+              </Link>
             </li>
             <li>
-              
               <Link className="Navmenu_Navlink">Blog</Link>
             </li>
             <li>
-              
-              <Link to='/Contect_Navbar' className="Navmenu_Navlink">Contact Us</Link>
+              <Link to="/contact-us" className="Navmenu_Navlink">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -97,13 +102,13 @@ function Navbar() {
           <button>Book Consultation</button>
           <Link>
             {" "}
-            <i class="bx bx-search-alt-2"></i>
+            <i className="bx bx-search-alt-2"></i>
           </Link>
         </div>
       </div>
 
-     {/* -----------Mobile View------------- */}
-{/* 
+      {/* -----------Mobile View------------- */}
+      {/* 
       <div className="Mobile">
         <div className="Mobile_icon">
           <span>
@@ -113,7 +118,7 @@ function Navbar() {
           <h3>Menu</h3>
         </div> */}
 
-         {/* <div className='Mobile_close_menu'>
+      {/* <div className='Mobile_close_menu'>
             
           <div  className='Navmenu'>
                       <ul >
@@ -131,7 +136,7 @@ function Navbar() {
             
  <div className='Navbar_button'>
             <button>Book Consultation</button>
-          <Link> <i class='bx bx-search-alt-2'></i></Link> 
+          <Link> <i className='bx bx-search-alt-2'></i></Link> 
 
         </div>
 
@@ -145,21 +150,6 @@ function Navbar() {
 
 export default Navbar;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import React, { useState } from "react";
 // import { Navbar_logo } from "../Data/Navbar";
 // import { Navbar_Data } from "../Data/Navbar";
@@ -168,7 +158,6 @@ export default Navbar;
 // import { FaChevronDown } from "react-icons/fa";
 // import { IoReorderThree } from "react-icons/io5";
 // import { FaPlus } from "react-icons/fa6";
-
 
 // import React, { useState } from "react";
 // import { Navbar_logo } from "../Data/Navbar";
@@ -265,7 +254,7 @@ export default Navbar;
 //           <button>Book Consultation</button>
 //           <Link>
 //             {" "}
-//             <i className="bx bx-search-alt-2"></i>
+//             <i classNameName="bx bx-search-alt-2"></i>
 //           </Link>
 //         </div>
 //       </div>

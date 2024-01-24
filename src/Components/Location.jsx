@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa6";
 
 import { IoCall } from "react-icons/io5";
 import { Location_Data1 } from "../Data/Location_Data";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Location() {
   return (
@@ -17,7 +17,7 @@ function Location() {
             <div className="Location2" key={index}>
               <div className="Location_Detail">
                 <div className="Location_Detail1">
-                  <img src={product.logo} />
+                  <img src={product.logo} alt="" />
                 </div>
                 <div className="Location_Detail2">
                   <h1>{product.Adress}</h1>
@@ -38,32 +38,51 @@ function Location() {
 
                 <div className="Location_Detai4">
                   <span>
-                  <a href="mailto:info@trianglespace.in" target="_blank">
+                    <a
+                      rel="noopener noreferrer"
+                      href="mailto:info@trianglespace.in"
+                      target="_blank"
+                    >
                       <CgMail />
                     </a>
-                    
                   </span>
-                  <h2> <a href="mailto:info@trianglespace.in" target="_blank">
-                  {product.gmail}
-                    </a></h2>
+                  <h2>
+                    {" "}
+                    <a
+                      rel="noopener noreferrer"
+                      href="mailto:info@trianglespace.in"
+                      target="_blank"
+                    >
+                      {product.gmail}
+                    </a>
+                  </h2>
                 </div>
 
                 <div className="Location_Detai5">
                   <span>
-                    
-                    <a href="https://www.facebook.com/trianglespacelimited" target="_blank">
+                    <a
+                      rel="noopener noreferrer"
+                      href="https://www.facebook.com/trianglespacelimited"
+                      target="_blank"
+                    >
                       <FaFacebookF />
                     </a>
                   </span>
                   <span>
-                    
-                    <a href="https://www.instagram.com/trianglespacelimited/" target="_blank">
+                    <a
+                      rel="noopener noreferrer"
+                      href="https://www.instagram.com/trianglespacelimited/"
+                      target="_blank"
+                    >
                       <FaInstagram />
                     </a>
                   </span>
                   <span>
-                    
-                    <a href="mailto:info@trianglespace.in" target="_blank">
+                    <a
+                      rel="noopener noreferrer"
+                      href="mailto:info@trianglespace.in"
+                      target="_blank"
+                    >
                       <CgMail />
                     </a>
                   </span>
@@ -118,13 +137,24 @@ function Location() {
 
       <div className="Fother_map">
         <h1>Locate Us</h1>
-
         <div className="Fother_map1">
-        <div ><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Triangle%20space%20private%20limited%20Sector%2014%20Part%20%E2%80%93%202,%20Hisar,%20Haryana%20%E2%80%93%20125001+(Triangle%20space%20private%20limited)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+          <div>
+            <iframe
+              width="100%"
+              height="300"
+              title="map"
+              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Triangle%20space%20private%20limited%20Sector%2014%20Part%20%E2%80%93%202,%20Hisar,%20Haryana%20%E2%80%93%20125001+(Triangle%20space%20private%20limited)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
+              <a
+                rel="noopener noreferrer"
+                href="https://www.maps.ie/population/"
+              >
+                Population Estimator map
+              </a>
+            </iframe>
+          </div>
         </div>
       </div>
-
-      <div></div>
     </div>
   );
 }

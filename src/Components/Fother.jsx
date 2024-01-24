@@ -1,44 +1,50 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import top_arrow from "../Images/top_arrow.png";
-import { FaWhatsapp } from "react-icons/fa";
-import { MdOutlineVerticalAlignTop } from "react-icons/md";
 
 function Fother() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+  };
+
   return (
     <div className="Fother">
       <div className="Fothers">
-        {/* <div className="Fothers_1">
-        <span className="Fother_arrow_icon"><i class='bx bxs-arrow-to-top'></i></span>
-        </div> */}
-        <h2>Copyright ©2024. Triangle Space Pvt. Ltd.</h2>
+        <h2>Copyright © 2024. Triangle Space Pvt. Ltd.</h2>
       </div>
 
       <div className="Fothers_2">
         <ul>
           <li>
-            <a className="" href="">
+            <Link to="/home" onClick={() => handleLinkClick()}>
               Home
-            </a>
+            </Link>
           </li>
-          <li  className="" >
-            <a>Portfolio</a>
+          <li>
+            <Link to="/portfolio" onClick={() => handleLinkClick()}>
+              Portfolio
+            </Link>
           </li>
-          <li  className="" >
-            <a>Services</a>
+          <li>
+            <Link to="/services" onClick={() => handleLinkClick()}>
+              Services
+            </Link>
           </li>
-          <li  className="" >
-            <a>Contact Us</a>
+          <li>
+            <Link
+              to="/contact-us"
+              onClick={() => handleLinkClick("/contact-us")}
+            >
+              Contact Us
+            </Link>
           </li>
         </ul>
-
-        {/* <div className="Fothers_3">
-          <div className="Fothers_3_whatup">
-            <FaWhatsapp />
-          </div>
-          <h2>Chat With us</h2>
-        </div> */}
       </div>
     </div>
   );
