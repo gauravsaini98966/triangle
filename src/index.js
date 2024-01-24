@@ -11,6 +11,7 @@ import Portfolio_Navbar from './Components/Portfolio_Navbar';
 
 import Contect_Navbar from './Components/Contect_Navbar';
 import About from './Components/About';
+import Blogs_Navbar from './Components/Blogs_Navbar';
 
 
 import Home from './Components/Home';
@@ -20,10 +21,12 @@ const router =createBrowserRouter(
     <Route path='/' element={<Layout/>}>
        <Route path='' element={<Home/>}/>
     <Route path='/Home' element={<Home/>}/>
+    <Route path='/Blogs_Navbar' element={<Blogs_Navbar/>}/>
    
     <Route path='/About' element={<About/>}/>
     <Route path='/ServicesNavbar' element={<Services/>}/>
     <Route path='/Portfolio_Navbar' element={<Portfolio_Navbar/>}/>
+
     <Route path='/Contect_Navbar' element={<Contect_Navbar/>}/>
 
    

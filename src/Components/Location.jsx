@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa6";
 
 import { IoCall } from "react-icons/io5";
 import { Location_Data1 } from "../Data/Location_Data";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Location() {
   return (

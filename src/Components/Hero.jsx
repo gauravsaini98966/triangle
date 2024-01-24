@@ -184,7 +184,7 @@ import {Hero_Data} from '../Data/Hero_Data'
 import React from 'react'
 import {Hero_Video} from '../Data/Hero_Data'
 import { Link } from 'react-router-dom'
-import Contect_Navbar from './Contect_Navbar'
+// import Contect_Navbar from './Contect_Navbar'
 function Hero() {
   return (
     <div>

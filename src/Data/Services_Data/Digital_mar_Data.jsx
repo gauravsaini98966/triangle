@@ -1,10 +1,10 @@
  
- import { FaThumbsUp } from "react-icons/fa";
- import { HiSpeakerphone } from "react-icons/hi";
- import { IoMdContact } from "react-icons/io";
- import { Ri24HoursFill } from "react-icons/ri";
- import { FaPager } from "react-icons/fa6";
- import { CiInstagram } from "react-icons/ci";
+//  import { FaThumbsUp } from "react-icons/fa";
+//  import { HiSpeakerphone } from "react-icons/hi";
+//  import { IoMdContact } from "react-icons/io";
+//  import { Ri24HoursFill } from "react-icons/ri";
+//  import { FaPager } from "react-icons/fa6";
+//  import { CiInstagram } from "react-icons/ci";
 
 
  import { FaHandHoldingUsd } from "react-icons/fa";

@@ -5,8 +5,7 @@ import Contect_appotment from './Contect_appotment'
 function Contect_Navbar() {
   return (
     <div>
-        <ContactUs/>
-        
+        <ContactUs/> 
         <Contect_appotment/>
         <Map/>
     </div>

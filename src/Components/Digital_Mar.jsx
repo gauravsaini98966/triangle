@@ -1,7 +1,7 @@
 import React from 'react'
-import {Web_davelopment} from '../Data/Services_Data/Web_dev_data'
-import {Web_davelopment2} from '../Data/Services_Data/Web_dev_data'
-import {Catagary_type} from '../Data/Services_Data/Web_dev_data'
+// import {Web_davelopment} from '../Data/Services_Data/Web_dev_data'
+// import {Web_davelopment2} from '../Data/Services_Data/Web_dev_data'
+// import {Catagary_type} from '../Data/Services_Data/Web_dev_data'
 
 import { FaCheck } from "react-icons/fa";
 import { Link } from 'react-router-dom';

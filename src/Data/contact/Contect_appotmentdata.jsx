@@ -1,6 +1,6 @@
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdContact } from "react-icons/io";
-import { SlScreenSmartphone } from "react-icons/sl";
+// import { SlScreenSmartphone } from "react-icons/sl";
 import { MdEmail } from "react-icons/md";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 

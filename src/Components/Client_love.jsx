@@ -1,8 +1,8 @@
 import React from 'react'
 import {Client_top} from '../Data/Client_Data';
 import {Client_bottom} from '../Data/Client_Data';
-import {Owners} from '../Data/Client_Data'
-import Slider from "react-slick";
+// import {Owners} from '../Data/Client_Data'
+// import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

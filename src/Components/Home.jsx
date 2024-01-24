@@ -8,13 +8,12 @@ import Client_love from '../Components/Client_love'
 import Contect from '../Components/Contect'
 import Blogs from './Blogs'
 import Hero from '../Components/Hero'
-// import ParticleComponent from './ParticleComponent';
+
 function Home() {
   return (
    <>
    <Hero/>
    <Work/>
-
    <Website_trafice/>
    <Servises/>
    <Projects/>

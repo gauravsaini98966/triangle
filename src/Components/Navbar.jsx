@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Navbar_logo } from "../Data/Navbar";
-import { Navbar_Data } from "../Data/Navbar";
+// import { Navbar_Data } from "../Data/Navbar";
 import "../Style/Style.css";
 import { Link } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
-import { IoReorderThree } from "react-icons/io5";
-import { FaPlus } from "react-icons/fa6";
+// import { FaChevronDown } from "react-icons/fa";
+// import { IoReorderThree } from "react-icons/io5";
+// import { FaPlus } from "react-icons/fa6";
 function Navbar() {
 
   const [showServices, setShowServices] = useState(false);
@@ -73,9 +73,9 @@ function Navbar() {
              
             >
               <Link to='/ServicesNavbar' className="Navmenu_Navlink Navlink_Services-2">Services</Link>{" "}
-              <span>
+              {/* <span>
                 <FaChevronDown />
-              </span>{" "}
+              </span>{" "} */}
             </li>
 
             <li>
@@ -84,7 +84,7 @@ function Navbar() {
             </li>
             <li>
               
-              <Link className="Navmenu_Navlink">Blog</Link>
+              <Link to='/Blogs_Navbar' className="Navmenu_Navlink">Blog</Link>
             </li>
             <li>
               

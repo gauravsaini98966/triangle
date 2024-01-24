@@ -111,7 +111,7 @@ function Website_trafice() {
       setErrors(newErrors);
     } else {
       // Your form submission logic goes here
-      console.log('Form submitted:', formValues);
+      // console.log('Form submitted:', formValues);
 
       // Reset the form after submission
       setFormValues(initialValues);
