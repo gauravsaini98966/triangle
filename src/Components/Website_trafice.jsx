@@ -69,73 +69,70 @@
 
 // export default Website_trafice;
 
-
-
 import { Website } from "../Data/Website_trafice";
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
+import axios from "axios";
 function Website_trafice() {
-  const initialValues = { fullName: '', email: '', contact: '' };
+  const initialValues = { fullName: "", email: "", contact: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues((prevValues) => ({ ...prevValues, [name]: value }));
-    setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Simple validation
     const newErrors = {};
-    if (formValues.fullName.trim() === '') {
-      newErrors.fullName = 'Full Name is required';
+    if (formValues.fullName.trim() === "") {
+      newErrors.fullName = "Full Name is required";
     }
 
-    if (formValues.contact.trim() === '') {
-      newErrors.contact = 'Contact number is required';
+    if (formValues.contact.trim() === "") {
+      newErrors.contact = "Contact number is required";
     } else if (!/^\d+$/.test(formValues.contact)) {
-      newErrors.contact = 'Invalid contact number';
+      newErrors.contact = "Invalid contact number";
     }
 
-    if (formValues.email.trim() === '') {
-      newErrors.email = 'Email is required';
+    if (formValues.email.trim() === "") {
+      newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
-      newErrors.email = 'Invalid email format';
+      newErrors.email = "Invalid email format";
     }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      // Your form submission logic goes here
-      console.log('Form submitted:', formValues);
-
-      // Reset the form after submission
-      setFormValues(initialValues);
-      setIsSubmitted(true);
-
-      // Optionally, you can reset the submission status after a certain time
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+      try {
+        const response = await axios.post(
+          "http://localhost:8080/grow-with-us",
+          {
+            fullName: formValues.fullName,
+            email: formValues.email,
+            contactNumber: formValues.contact,
+          }
+        );
+        if (response.status === 201) {
+          alert(response.data.message);
+          setFormValues(initialValues);
+        }
+      } catch (error) {
+        if (error.response && error.response.data) {
+          alert(error.response.data.message);
+        } else {
+          alert("Server Error! Try Again Later!");
+        }
+      }
     }
   };
 
   return (
-
-   
-
-
-
-
-    
-    
     <div className="Website_trafice">
-
-<div className="Website_trafice_top">
+      <div className="Website_trafice_top">
         {Website.map((product, index) => {
           return (
             <div key={index} className="Website_trafice_top1">
@@ -145,19 +142,12 @@ function Website_trafice() {
           );
         })}
       </div>
-
-        {isSubmitted && (
-            <div>  <p className="success-message">Form submitted successfully!</p></div>
-        
-        )}
-      {/* ... */}
       <div className="Website_trafice_bottom">
         <form className="" onSubmit={handleSubmit}>
           <div className="Website_trafice_bottom1">
-            {/* ... */}
             <div className="Website_trafice_bottom2">
               <label>
-                Full Name<span> *</span>
+                Full Name<span>*</span>
               </label>
               <input
                 placeholder="Full Name"
@@ -199,7 +189,6 @@ function Website_trafice() {
             <button type="submit">GROW WITH US</button>
           </div>
         </form>
-        
       </div>
     </div>
   );
