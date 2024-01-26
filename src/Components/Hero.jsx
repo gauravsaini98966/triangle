@@ -196,7 +196,7 @@ function Hero() {
                   <h1>{Product.h1}</h1>
                   <h2>{Product.h2}</h2>
                   <div className="main-left-btn">
-                    <Link to="/Contect_Navbar">
+                    <Link to="/contact-us">
                       <button>{Product.button}</button>
                     </Link>
                   </div>

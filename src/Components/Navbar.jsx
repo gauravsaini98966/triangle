@@ -77,9 +77,9 @@ function Navbar() {
               >
                 Services
               </Link>{" "}
-              <span>
-                <FaChevronDown />
-              </span>{" "}
+              {/* <span> */}
+                {/* <FaChevronDown />
+              </span>{" "} */}
             </li>
 
             <li>
