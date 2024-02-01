@@ -77,9 +77,9 @@ function Navbar() {
               >
                 Services
               </Link>{" "}
-              <span>
-                <FaChevronDown />
-              </span>{" "}
+              {/* <span> */}
+                {/* <FaChevronDown />
+              </span>{" "} */}
             </li>
 
             <li>
@@ -88,7 +88,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className="Navmenu_Navlink">Blog</Link>
+              <Link to="/BlogsNavbar" className="Navmenu_Navlink">Blog</Link>
             </li>
             <li>
               <Link to="/contact-us" className="Navmenu_Navlink">
