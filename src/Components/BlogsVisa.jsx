@@ -5,6 +5,8 @@ import {Blogs_Visa2} from "../Data/Blogs_Visa_Data"
 
 function Blogs_Visa() {
   return (
+
+    
     <div className="Blogs_Visa">
       <div className="Blogs_Visa_1">
         {Blogs_Visa1.map((Product, index) => {

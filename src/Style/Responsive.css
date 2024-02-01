@@ -251,7 +251,6 @@
     text-transform: capitalize;
   }
 }
-
 @media screen and (max-width: 410px) {
   .Website_trafice_bottom1 input {
     width: 250px;
