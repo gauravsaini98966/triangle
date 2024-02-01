@@ -18,6 +18,7 @@ import ContectNavbar from "./Components/ContectNavbar";
 import About from "./Components/About";
 
 import Home from "./Components/Home";
+import BlogsNavbar from './Components/BlogsNavbar'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="/services" element={<Services />} />
       <Route path="/portfolio" element={<PortfolioNavbar />} />
       <Route path="/contact-us" element={<ContectNavbar />} />
+      <Route path="/BlogsNavbar" element={<BlogsNavbar />} />
     </Route>
   )
 );
