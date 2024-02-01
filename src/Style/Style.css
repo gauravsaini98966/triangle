@@ -1794,3 +1794,8 @@ letter-spacing: 0.6px;
     font-size: 11px;
     padding: 10px 8px;
   }
+
+
+  .Blog_right_input input{
+    max-width: 220px !important;
+  }
