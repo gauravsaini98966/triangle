@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 60px;
-    /* align-items: center; */
+    align-items: center;
 }
 .Navbar_logo_1 img{
     max-width: 200px;
