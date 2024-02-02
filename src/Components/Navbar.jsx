@@ -142,7 +142,7 @@ function Navbar() {
               // </div>
             {/* )} */}
               <li>
-                <Link to="/home" className="Navmenu_Navlink">
+                <Link to="/" className="Navmenu_Navlink">
                   Home
                 </Link>
               </li>
@@ -174,7 +174,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/BlogsNavbar" className="Navmenu_Navlink">
+                <Link to="/blogs" className="Navmenu_Navlink">
                   Blog
                 </Link>
               </li>
