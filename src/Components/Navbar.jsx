@@ -3,6 +3,7 @@ import { Navbar_logo } from "../Data/Navbar";
 import "../Style/Style.css";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
+import { IoSearchOutline } from "react-icons/io5";
 function Navbar() {
   const [showServices, setShowServices] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -166,9 +167,11 @@ function Navbar() {
                 </Link>
               </li>
 
-              <li>
-                <div className="border-[1px]">
-                  <input type="text" />
+              <li><div className="Nav_Searchtop">
+                <div className=" Nav_Search  ">
+                  <input placeholder="Search...." type="text" />
+                <button><span><IoSearchOutline /></span></button>  
+                </div>
                 </div>
               </li>
             </ul>

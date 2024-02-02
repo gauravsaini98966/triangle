@@ -58,6 +58,26 @@
     padding: 60px 40px;
    
   }
+  .Nav_Search{
+    max-width: 274px;
+    border: 1px solid #918e8e !important;
+  }
+  .Nav_Search input{
+    /* color: ; */
+    padding: 5px;
+ 
+    max-width: 200px;
+    outline: none;
+    
+  }
+  .Nav_Search span{
+    font-size: 19px;
+  position: absolute;
+  bottom: 20px;
+  /* left: 133px; */
+  right: 110px;
+  color: #7A7A7A;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -225,6 +245,18 @@
 @media screen and (max-width: 420px) {
   .Navbar_logo_1 img {
     max-width: 140px;
+  }
+  .Nav_Searchtop{
+    display: flex;
+    justify-content: center;
+  }
+  .Nav_Search span {
+    font-size: 19px;
+    position: absolute;
+    bottom: 20px;
+    
+    right: 103px;
+    color: #7A7A7A;
   }
   .Contect {
     /* display: flex; 
