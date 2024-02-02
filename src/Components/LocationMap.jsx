@@ -1,6 +1,6 @@
 import React from "react";
 
-function Location_map() {
+function LocationMap() {
   return (
     <div className="Location_map">
       <div>
@@ -20,4 +20,4 @@ function Location_map() {
   );
 }
 
-export default Location_map;
+export default LocationMap;

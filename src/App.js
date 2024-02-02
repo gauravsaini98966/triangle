@@ -3,47 +3,30 @@ import Navbar from "./Components/Navbar";
 
 // import './Style/Style.css'
 import "../src/Style/Responsive.css";
-import ContectUs_full from "./Components/ContectUs_full";
-import Work from "./Components/Work";
-import Servises from "./Components/Servises";
-import Projects from "./Components/Projects";
-import Client_love from "./Components/Client_love";
-import Website_trafice from "./Components/Website_trafice";
-import Contect from "./Components/Contect";
-import Blogs from "./Components/Blogs";
 import Fother from "./Components/Fother";
 import Locations from "./Components/Location";
-import Web_dev from "./Components/Web_dev";
-import Hero from "./Components/Hero";
-import Technology from "./Components/technology";
-import App_dev from "./Components/App_dev";
-import Digital_mar from "./Components/Digital_Mar";
-import Our_work from "./Components/Our_Work";
-import Location_map from "./Components/Location_map";
-import Portfolio from "./Components/Portfolio_img";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
+import ServicesPage from "./Pages/ServicesPage";
+import PortfolioPage from "./Pages/PortfolioPage";
+import ContactUsPage from "./Pages/ContactUsPage";
+import BlogPage from "./Pages/BlogPage";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Work />
-      <Website_trafice />
-      <Servises />
-      <Projects />
-      <Client_love />
-      <Contect />
-      <Blogs />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/blogs" element={<BlogPage />} />
+      </Routes>
       <Locations />
-      <Web_dev />
-      <Technology />
-      <App_dev />
-      <Digital_mar />
-      <Our_work />
-      <Location_map />
-      <ContectUs_full />
-      <Portfolio />
       <Fother />
-      {/* <Hero/> */}
     </>
   );
 }

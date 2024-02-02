@@ -22,7 +22,7 @@ function Fother() {
       <div className="Fothers_2">
         <ul>
           <li>
-            <Link to="/home" onClick={() => handleLinkClick()}>
+            <Link to="/" onClick={() => handleLinkClick()}>
               Home
             </Link>
           </li>
