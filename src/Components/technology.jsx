@@ -1,7 +1,7 @@
 import React from "react";
 import { technology_data2 } from "../Data/technology_data";
 import { technology_data1 } from "../Data/technology_data";
-function technology() {
+function Technology() {
   return (
     <div className="technology">
       <div className="technology_top">
@@ -24,4 +24,4 @@ function technology() {
   );
 }
 
-export default technology;
+export default Technology;

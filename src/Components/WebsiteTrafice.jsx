@@ -72,7 +72,7 @@
 import { Website } from "../Data/Website_trafice";
 import React, { useState } from "react";
 import axios from "axios";
-function Website_trafice() {
+function WebsiteTrafice() {
   const initialValues = { fullName: "", email: "", contact: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
@@ -194,4 +194,4 @@ function Website_trafice() {
   );
 }
 
-export default Website_trafice;
+export default WebsiteTrafice;

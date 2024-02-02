@@ -1,7 +1,7 @@
 import React from "react";
 import { Our_work } from "../Data/Services_Data/Our_Work_data";
 
-function Our_Work() {
+function OurWork() {
   return (
     <div className="Our_Work">
       <div className="Our_Work_top">
@@ -26,4 +26,4 @@ function Our_Work() {
   );
 }
 
-export default Our_Work;
+export default OurWork;

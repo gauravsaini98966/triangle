@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Navbar_logo } from "../Data/Navbar";
-// import { Navbar_Data } from "../Data/Navbar";
 import "../Style/Style.css";
 import { Link } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
-// import { IoReorderThree } from "react-icons/io5";
-// import { FaPlus } from "react-icons/fa6";
 function Navbar() {
   const [showServices, setShowServices] = useState(false);
 
@@ -22,7 +18,7 @@ function Navbar() {
         {Navbar_logo.map((Product, index) => {
           return (
             <div className="Navbar_logo_1" key={index}>
-              <Link to="/home">
+              <Link to="/">
                 <img src={Product.img} alt="" />
               </Link>
             </div>
@@ -56,7 +52,7 @@ function Navbar() {
               </div>
             )}
             <li>
-              <Link to="/home" className="Navmenu_Navlink">
+              <Link to="/" className="Navmenu_Navlink">
                 Home
               </Link>
             </li>
@@ -78,7 +74,7 @@ function Navbar() {
                 Services
               </Link>{" "}
               {/* <span> */}
-                {/* <FaChevronDown />
+              {/* <FaChevronDown />
               </span>{" "} */}
             </li>
 
@@ -88,7 +84,9 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/BlogsNavbar" className="Navmenu_Navlink">Blog</Link>
+              <Link to="/blogs" className="Navmenu_Navlink">
+                Blog
+              </Link>
             </li>
             <li>
               <Link to="/contact-us" className="Navmenu_Navlink">
@@ -101,7 +99,6 @@ function Navbar() {
         <div className="Navbar_button">
           <button>Book Consultation</button>
           <Link>
-            {" "}
             <i className="bx bx-search-alt-2"></i>
           </Link>
         </div>

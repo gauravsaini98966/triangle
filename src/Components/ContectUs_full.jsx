@@ -1,6 +1,5 @@
 import React from "react";
 import ContactUsdata from "../Data/ContactUsdata";
-// import "../Style/ContactUs.css";
 
 const ContactUs = () => {
   return (
