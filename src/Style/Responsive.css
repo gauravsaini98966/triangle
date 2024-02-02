@@ -283,13 +283,13 @@
   .Fother {
     padding: 10px 60px;
     display: flex;
-    /* flex: ; */
+   
     flex-wrap: wrap;
     gap: 20px;
   }
 
   .Our_Work_bottom {
-    /* border: 1px solid black; */
+    
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -318,46 +318,18 @@
     flex-wrap: wrap;
   }
   .open {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    right: 0px;
-    top: 94px;
-    background: white;
-    /* opacity: 10; */
-    /* width: 225px; */
-    /* width: 100%; */
-    text-align: center;
-    width: 0px;
-    transition: 0.6s;
-    padding: 10px 0px;
-      /* padding: 10px; */
-      overflow-x: hidden;
-      z-index: 100;
+  
+      text-align: center;
+      width: 100%;
   }
   .close {
-    /* text-decoration: none; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    right: 0px;
-    top: 94px;
-    background: white;
-    /* opacity: 0; */
-    /* width: 0px; */
-    transition: 0.6s;
-  width: 100%;
-  /* width: 350px; */
-  transition: 0.6s;
+ 
+    width: 0px;
+
+
   text-align: center;
-  /* padding: 10px; */
-  padding: 10px 0px;
-  overflow-x: hidden;
   }
-  
+
 }
 @media screen and (max-width: 410px) {
   .Website_trafice_bottom1 input {

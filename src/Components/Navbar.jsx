@@ -118,15 +118,15 @@ function Navbar() {
 
         <div className={`Mobile_close_menu`}>
           <div className="Navmenu_Mobile">
-            <ul className={` ${toggle ? "close" : "open"}`}>
+            <ul className={` ${toggle ? "open" : "close"}`}>
              
               <li>
-                <Link onClick={Click} to="/" className="Navmenu_Navlink" >
+                <Link onClick={Click} to="/" className="Navmenu_Navlink Mobile_Navlink" >
                   Home
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/about" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/about" className="Navmenu_Navlink Mobile_Navlink">
                   About
                 </Link>
               </li>
@@ -138,7 +138,7 @@ function Navbar() {
               >
                 <Link onClick={Click}
                   to="/services"
-                  className="Navmenu_Navlink Navlink_Services-2"
+                  className="Navmenu_Navlink Navlink_Services-2 Mobile_Navlink"
                 >
                   Services
                 </Link>{" "}
@@ -146,22 +146,22 @@ function Navbar() {
               </li>
 
               <li>
-                <Link onClick={Click} to="/portfolio" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/portfolio" className="Navmenu_Navlink Mobile_Navlink">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/blogs" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/blogs" className="Navmenu_Navlink Mobile_Navlink">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/contact-us" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/contact-us Mobile_Navlink" className="Navmenu_Navlink">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/" className="Navmenu_Navlink Mobile_Navlink">
                   Book Consultation
                 </Link>
               </li>
