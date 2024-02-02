@@ -119,28 +119,7 @@ function Navbar() {
         <div className={`Mobile_close_menu`}>
           <div className="Navmenu_Mobile">
             <ul className={` ${toggle ? "close" : "open"}`}>
-              {/* {showServices && ( 
-              // <div className="Navmenu_servises">
-              //   <div className="Navmenu_servises1">
-              //     <Link>
-              //       <span>Website Development</span>
-              //     </Link>
-              //     <hr></hr>
-              //   </div>
-              //   <div className="Navmenu_servises2">
-              //     <Link>
-              //       <span>App Development</span>
-              //     </Link>
-              //     <hr></hr>
-              //   </div>
-              //   <div className="Navmenu_servises3">
-              //     <Link>
-              //       <span>Digital Marketing</span>
-              //     </Link>
-              //     <hr></hr>
-              //   </div>
-              // </div>
-            {/* )} */}
+             
               <li>
                 <Link onClick={Click} to="/" className="Navmenu_Navlink" >
                   Home
@@ -163,9 +142,7 @@ function Navbar() {
                 >
                   Services
                 </Link>{" "}
-                {/* <span> */}
-                {/* <FaChevronDown />
-              </span>{" "} */}
+             
               </li>
 
               <li>
@@ -204,4 +181,4 @@ function Navbar() {
 
 export default Navbar;
 
-//
+
