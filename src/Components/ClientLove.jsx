@@ -1,22 +1,9 @@
 import React from "react";
 import { Client_top } from "../Data/Client_Data";
 import { Client_bottom } from "../Data/Client_Data";
-// import {Owners} from '../Data/Client_Data'
-// import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-function Client_love() {
-  //   const sliderSettings = {
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 500,
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     autoplay: true,
-  //     autoplaySpeed: 2000, // Set autoplay speed to 2 seconds
-  //   };
-
+function ClientLove() {
   return (
     <div className="Client">
       <div className="Client_top">
@@ -62,4 +49,4 @@ function Client_love() {
   );
 }
 
-export default Client_love;
+export default ClientLove;

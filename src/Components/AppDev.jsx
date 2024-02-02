@@ -1,20 +1,12 @@
 import React from "react";
-// import { Web_davelopment } from "../Data/Services_Data/Web_dev_data";
-// import { Web_davelopment2 } from "../Data/Services_Data/Web_dev_data";
-// import { Catagary_type } from "../Data/Services_Data/Web_dev_data";
-
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-// import { FaThumbsUp } from "react-icons/fa";
-// import { Catagary } from "../Data/Services_Data/Web_dev_data";
-// import { FaThumbsUp } from "react-icons/fa";
 import { App_davelopment } from "../Data/Services_Data/App_dev_data";
 import { App_davelopment2 } from "../Data/Services_Data/App_dev_data";
 import { app_Catagary } from "../Data/Services_Data/App_dev_data";
 import { app_Catagary_type } from "../Data/Services_Data/App_dev_data";
 
-function Web_dev() {
+function AppDev() {
   return (
     <div className="Web_Dev">
       <div className="Web_Dev_full">
@@ -100,4 +92,4 @@ function Web_dev() {
   );
 }
 
-export default Web_dev;
+export default AppDev;

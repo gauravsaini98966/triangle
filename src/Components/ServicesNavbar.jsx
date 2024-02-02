@@ -4,7 +4,7 @@ import Technology from "./technology";
 import App from "./App_dev";
 import OurWork from "./Our_Work";
 import Digital from "./Digital_Mar";
-import Contect_appotment from "./Contect_appotment";
+
 function Services() {
   return (
     <div>

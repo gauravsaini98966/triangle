@@ -6,7 +6,6 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaReact } from "react-icons/fa6";
 import { MdOutlineMenuBook } from "react-icons/md";
-// import { Link } from "react-router-dom";
 import Aboutdata from "../Data/Aboutdata";
 
 const About = () => {

@@ -23,7 +23,7 @@ function Navbar() {
         {Navbar_logo.map((Product, index) => {
           return (
             <div className="Navbar_logo_1" key={index}>
-              <Link to="/home">
+              <Link to="/">
                 <img src={Product.img} alt="" />
               </Link>
             </div>
@@ -34,6 +34,28 @@ function Navbar() {
       <div className="Navmenu_full">
         <div className="Navmenu">
           <ul>
+            {showServices && (
+              <div className="Navmenu_servises">
+                <div className="Navmenu_servises1">
+                  <Link>
+                    <span>Website Development</span>
+                  </Link>
+                  <hr></hr>
+                </div>
+                <div className="Navmenu_servises2">
+                  <Link>
+                    <span>App Development</span>
+                  </Link>
+                  <hr></hr>
+                </div>
+                <div className="Navmenu_servises3">
+                  <Link>
+                    <span>Digital Marketing</span>
+                  </Link>
+                  <hr></hr>
+                </div>
+              </div>
+            )}
             <li>
               <Link to="/home" className="Navmenu_Navlink">
                 Home
@@ -64,7 +86,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/BlogsNavbar" className="Navmenu_Navlink">
+              <Link to="/blogs" className="Navmenu_Navlink">
                 Blog
               </Link>
             </li>
