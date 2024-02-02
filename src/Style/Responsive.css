@@ -7,11 +7,14 @@
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1170px) {
   .Navmenu_full {
     display: none;
   }
 
+  .Mobile {
+    display: flex;
+  }
   .Location {
     display: flex;
     gap: 10px;
@@ -19,9 +22,47 @@
     background-color: #374a5e;
     color: #fff;
   }
+  .close {
+    /* text-decoration: none; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 0px;
+    top: 94px;
+    background: white;
+    opacity: 0;
+    /* width: 0px; */
+    transition: 0.6s;
+  }
+  .open {
+    /* text-decoration: none; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 0px;
+    top: 94px;
+    background: white;
+    opacity: 10;
+    /* width: 225px; */
+  }
+  .Contect_appotment {
+    display: flex;
+    gap: 110px;
+    padding: 60px 40px;
+   
+  }
 }
 
 @media screen and (max-width: 840px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 30px;
+    align-items: center;
+    align-content: center;
+  }
   .Works {
     background-color: #f3f5f9;
     padding: 50px 30px;
@@ -100,9 +141,18 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+  .Contect_appotment {
+    display: flex;
+    gap: 25px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 760px) {
+  .Navbar_logo_1 img {
+    max-width: 170px;
+  }
   .Contect {
     /* display: flex; */
     gap: 30px;
@@ -149,6 +199,12 @@
     flex-wrap: wrap-reverse;
     justify-content: flex-start;
   }
+  .Contect_left_2 {
+    display: flex;
+    gap: 30px;
+    padding: 60px 0px;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -162,6 +218,9 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .Navbar_logo_1 img {
+    max-width: 140px;
+  }
   .Contect {
     /* display: flex; 
          gap: 30px; */
@@ -247,8 +306,43 @@
     line-height: 45px;
     text-transform: capitalize;
   }
+  .Contect_appotment {
+    display: flex;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+  .open {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 0px;
+    top: 94px;
+    background: white;
+    opacity: 10;
+    /* width: 225px; */
+    width: 100%;
+    text-align: center;
+  }
+  .close {
+    /* text-decoration: none; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 0px;
+    top: 94px;
+    background: white;
+    opacity: 0;
+    /* width: 0px; */
+    transition: 0.6s;
+  width: 100%;
+  text-align: center;
+  }
+  
 }
-
 @media screen and (max-width: 410px) {
   .Website_trafice_bottom1 input {
     width: 250px;
