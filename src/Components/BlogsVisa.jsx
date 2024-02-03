@@ -1,48 +1,29 @@
-import React from "react";
-import { Blogs_Visa1 } from "../Data/Blogs_Visa_Data";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Blogs_Visa2 } from "../Data/Blogs_Visa_Data";
+import Post from "./Post";
+
 
 function BlogsVisa() {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+  
+  async function fetchPosts() {
+    try {
+      const res = await axios.get("http://localhost:8080/post/getAllPosts");
+      setPosts(res.data.posts);
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
-
-    
     <div className="Blogs_Visa">
       <div className="Blogs_Visa_1">
-        {Blogs_Visa1.map((Product, index) => {
+        {posts.map((post, index) => {
           return (
-            <div className="Blogs_Visa_left" key={index}>
-              <h1>{Product.h1}</h1>
-              <div className="Blogs_Visa_2">
-                <div className="Blogs_Visa1">
-                  <span>{Product.person}</span>
-                  <h2>{Product.name}</h2>
-                </div>
-
-                <div className="Blogs_Visa1">
-                  <span>{Product.clock}</span>
-                  <h2>{Product.clock_time}</h2>
-                </div>
-
-                <div className="Blogs_Visa1">
-                  <span>{Product.file}</span>
-                  <h2>{Product.file_name}</h2>
-                </div>
-
-                <div className="Blogs_Visa1">
-                  <span>{Product.Comment}</span>
-                  <h2>{Product.Comment_name}</h2>
-                </div>
-              </div>
-
-              <p>{Product.p}</p>
-              <div className="Blogs_Visa_button">
-                <a href="/">
-                  {" "}
-                  <button>{Product.button}</button>
-                </a>
-                <span>{Product.button_icon}</span>
-              </div>
-            </div>
+            <Post post={post} key={index} />
           );
         })}
       </div>
