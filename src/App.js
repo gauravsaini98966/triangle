@@ -12,10 +12,12 @@ import ServicesPage from "./Pages/ServicesPage";
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactUsPage from "./Pages/ContactUsPage";
 import BlogPage from "./Pages/BlogPage";
+import TopBar from "./Components/TopBar";
 
 function App() {
   return (
     <>
+      <TopBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
