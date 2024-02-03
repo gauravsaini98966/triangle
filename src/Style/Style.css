@@ -490,8 +490,8 @@ height: 450px;
   gap: 25px;
 
   padding: 20px 0px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  /* scroll-behavior: smooth; */
 }
 .Client_bottom1 {
   /* border: 1px solid black; */
@@ -1622,6 +1622,7 @@ height: 450px;
   background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .breadcrumb span {
   color: #f30000;

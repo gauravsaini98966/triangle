@@ -157,7 +157,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/contact-us Mobile_Navlink" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/contact-us" className="Navmenu_Navlink">
                   Contact Us
                 </Link>
               </li>
