@@ -3,6 +3,7 @@ import { Navbar_logo } from "../Data/Navbar";
 import "../Style/Style.css";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
+import { IoSearchOutline } from "react-icons/io5";
 function Navbar() {
   const [showServices, setShowServices] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -119,35 +120,14 @@ function Navbar() {
         <div className={`Mobile_close_menu`}>
           <div className="Navmenu_Mobile">
             <ul className={` ${toggle ? "open" : "close"}`}>
-              {/* {showServices && ( 
-              // <div className="Navmenu_servises">
-              //   <div className="Navmenu_servises1">
-              //     <Link>
-              //       <span>Website Development</span>
-              //     </Link>
-              //     <hr></hr>
-              //   </div>
-              //   <div className="Navmenu_servises2">
-              //     <Link>
-              //       <span>App Development</span>
-              //     </Link>
-              //     <hr></hr>
-              //   </div>
-              //   <div className="Navmenu_servises3">
-              //     <Link>
-              //       <span>Digital Marketing</span>
-              //     </Link>
-              //     <hr></hr>
-              //   </div>
-              // </div>
-            {/* )} */}
+             
               <li>
-                <Link to="/" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/" className="Navmenu_Navlink Mobile_Navlink" >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/about" className="Navmenu_Navlink Mobile_Navlink">
                   About
                 </Link>
               </li>
@@ -157,41 +137,41 @@ function Navbar() {
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               >
-                <Link
+                <Link onClick={Click}
                   to="/services"
-                  className="Navmenu_Navlink Navlink_Services-2"
+                  className="Navmenu_Navlink Navlink_Services-2 Mobile_Navlink"
                 >
                   Services
                 </Link>{" "}
-                {/* <span> */}
-                {/* <FaChevronDown />
-              </span>{" "} */}
+             
               </li>
 
               <li>
-                <Link to="/portfolio" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/portfolio" className="Navmenu_Navlink Mobile_Navlink">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/blogs" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/blogs" className="Navmenu_Navlink Mobile_Navlink">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/contact-us Mobile_Navlink" className="Navmenu_Navlink">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/" className="Navmenu_Navlink">
+                <Link onClick={Click} to="/" className="Navmenu_Navlink Mobile_Navlink">
                   Book Consultation
                 </Link>
               </li>
 
-              <li>
-                <div className="border-[1px]">
-                  <input type="text" />
+              <li><div className="Nav_Searchtop">
+                <div className=" Nav_Search  ">
+                  <input placeholder="Search...." type="text" />
+                <button><span><IoSearchOutline /></span></button>  
+                </div>
                 </div>
               </li>
             </ul>
@@ -204,4 +184,4 @@ function Navbar() {
 
 export default Navbar;
 
-//
+
