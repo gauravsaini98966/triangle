@@ -97,16 +97,56 @@ function Location() {
         <h1>Useful Links</h1>
         <ul>
           <li>
-            <Link to="/Home">Home</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/about"
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/ServicesNavbar">Services</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/services"
+            >
+              Services
+            </Link>
           </li>
           <li>
-            <Link to="/Portfolio_Navbar">Portfolio</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/portfolio"
+            >
+              Portfolio
+            </Link>
           </li>
           <li>
             <Link to="/">Terms and Conditions</Link>

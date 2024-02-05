@@ -37,10 +37,7 @@ function Fother() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/contact-us"
-              onClick={() => handleLinkClick("/contact-us")}
-            >
+            <Link to="/contact-us" onClick={() => handleLinkClick()}>
               Contact Us
             </Link>
           </li>

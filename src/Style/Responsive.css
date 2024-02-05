@@ -63,25 +63,24 @@
     gap: 110px;
     padding: 60px 40px;
   }
-  .Nav_Search{
+  .Nav_Search {
     max-width: 274px;
     border: 1px solid #918e8e !important;
   }
-  .Nav_Search input{
+  .Nav_Search input {
     /* color: ; */
     padding: 5px;
- 
+
     max-width: 200px;
     outline: none;
-    
   }
-  .Nav_Search span{
+  .Nav_Search span {
     font-size: 19px;
-  position: absolute;
-  bottom: 20px;
-  /* left: 133px; */
-  right: 110px;
-  color: #7A7A7A;
+    position: absolute;
+    bottom: 20px;
+    /* left: 133px; */
+    right: 110px;
+    color: #7a7a7a;
   }
 }
 
@@ -104,7 +103,7 @@
     padding-top: 70px;
     padding-bottom: 20px;
   }
-  .button{
+  .button {
     margin-top: 10px;
   }
   .lower {
@@ -291,8 +290,9 @@
 
 @media screen and (max-width: 640px) {
   .Blogs_Visa_2 {
-    display: flex;
-    gap: 15px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
     padding: 18px 0px;
     color: #4a4a4a;
     font-size: 14px;
@@ -303,7 +303,7 @@
   .Navbar_logo_1 img {
     max-width: 140px;
   }
-  .Nav_Searchtop{
+  .Nav_Searchtop {
     display: flex;
     justify-content: center;
   }
@@ -311,9 +311,9 @@
     font-size: 19px;
     position: absolute;
     bottom: 20px;
-    
+
     right: 103px;
-    color: #7A7A7A;
+    color: #7a7a7a;
   }
   .Contect {
     /* display: flex; 
@@ -372,13 +372,12 @@
   .Fother {
     padding: 10px 60px;
     display: flex;
-   
+
     flex-wrap: wrap;
     gap: 20px;
   }
 
   .Our_Work_bottom {
-    
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -407,16 +406,13 @@
     flex-wrap: wrap;
   }
   .open {
-  
-      text-align: center;
-      width: 100%;
+    text-align: center;
+    width: 100%;
   }
   .close {
- 
     width: 0px;
 
-
-  text-align: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 410px) {
@@ -427,8 +423,6 @@
     outline: none;
   }
 }
-
-
 
 @media screen and (max-width: 370px) {
   .Fother_map1 iframe {
