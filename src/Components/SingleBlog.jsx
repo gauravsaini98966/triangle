@@ -30,7 +30,7 @@ const SingleBlog = () => {
     }
 
     fetchBlog();
-  }, [blogId]); // Include blogId as a dependency
+  }, [blogId]); 
 
   if (loading) {
     return <p>Loading...</p>;

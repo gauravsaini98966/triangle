@@ -125,7 +125,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* -----------Mobile View------------- */}
+     
 
       <div className="Mobile">
         <div className="Mobile_icon" onClick={Click}>

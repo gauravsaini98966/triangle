@@ -6,9 +6,9 @@ import { Catagary_type } from "../Data/Services_Data/Web_dev_data";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// import { FaThumbsUp } from "react-icons/fa";
+
 import { Catagary } from "../Data/Services_Data/Web_dev_data";
-// import { FaThumbsUp } from 'react-icons/fa';
+
 
 function WebDev() {
   return (

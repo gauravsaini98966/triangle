@@ -92,7 +92,7 @@ const About = () => {
         <div className="lowerdwon">
           <h1 className="uprh2">{Aboutdata[0].text11}</h1>
           <p className="uprh3">{Aboutdata[0].text12}</p>
-          {/* <Link className='button' to='./' >View Our Services</Link> */}
+      
           <button className="button"> View Our Services</button>
         </div>
       </div>

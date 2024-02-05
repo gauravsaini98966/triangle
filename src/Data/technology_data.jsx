@@ -6,7 +6,7 @@ import Node from "../Images/node.png";
 import PHP from "../Images/php.png";
 import Wordpress from "../Images/wordpress.png";
 import Shopify from "../Images/shopify.png";
-//  import Node from '../Images/Nodeee.png'
+
 import Laravel from "../Images/Laravel.png";
 import codelgniter from "../Images/codeIgniter.png";
 

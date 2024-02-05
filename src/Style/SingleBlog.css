@@ -83,7 +83,7 @@
   align-items: center;
 }
 
-/*Comments*/
+
 .leave-comments {
   font-family: "Open Sans", sans-serif;
   margin-top: 30px;
@@ -149,13 +149,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Initial state: fully transparent */
+  background-color: rgba(0, 0, 0, 0);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .blog-thumbnail-hover:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* On hover: semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.5); 
   opacity: 1;
 }
 

@@ -1,7 +1,5 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-
-// import './Style/Style.css'
 import "../src/Style/Responsive.css";
 import Fother from "./Components/Fother";
 import Locations from "./Components/Location";

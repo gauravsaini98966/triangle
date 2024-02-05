@@ -1,11 +1,11 @@
 import Blogs from "../Components/Blogs";
-import ClientLove from "../Components/ClientLove";
 import Contect from "../Components/Contect";
 import Projects from "../Components/Projects";
 import Servises from "../Components/Servises";
 import WebsiteTrafice from "../Components/WebsiteTrafice";
 import Work from "../Components/Work";
 import Hero from "../Components/Hero";
+import ClientLove from "../Components/ClientLove";
 
 const HomePage = () => {
   return (
@@ -15,7 +15,7 @@ const HomePage = () => {
       <WebsiteTrafice />
       <Servises />
       <Projects />
-      <ClientLove />
+      <ClientLove/>
       <Contect />
       <Blogs />
     </>

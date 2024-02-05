@@ -1,7 +1,7 @@
 import React from "react";
 import { CgMail } from "react-icons/cg";
 import { FaInstagram } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
+
 import { FaFacebookF } from "react-icons/fa6";
 
 import { IoCall } from "react-icons/io5";

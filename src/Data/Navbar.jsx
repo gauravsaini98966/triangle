@@ -4,35 +4,3 @@ export const Navbar_logo = [
   },
 ];
 
-// export const Navbar_Data=[
-//     {
-//         li:"Home",
-
-//     },
-//     {
-//         li:"About",
-//     },
-
-//     {
-//     li:"Services"
-
-//     }
-//     ,
-//     {
-//         li:"Portfolio"
-
-//         }
-//         ,
-//         {
-//             li:"Blog"
-
-//             }
-//             ,
-
-//             {
-//                 li:"Contact Us"
-
-//                 }
-//                 ,
-
-// ]
