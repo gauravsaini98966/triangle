@@ -508,6 +508,9 @@ height: 450px;
   text-align: center;
   padding: 20px 0px;
 }
+.open{
+  z-index: 999;
+}
 .Client_bottom1 > img {
   width: 50px;
   margin: auto;

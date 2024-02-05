@@ -4,6 +4,7 @@ import "../Style/Style.css";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
+import ContactForm from "./ContactForm";
 function Navbar() {
   const [showServices, setShowServices] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -98,9 +99,26 @@ function Navbar() {
             </li>
           </ul>
         </div>
-
+        {toggle && (
+          <div
+            style={{
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "rgba(0,0,0,0.8)",
+              position: "fixed",
+              top: "0",
+              left: "0",
+              zIndex: "999",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <ContactForm setToggle={Click} />
+          </div>
+        )}
         <div className="Navbar_button">
-          <button>Book Consultation</button>
+          <button onClick={Click}>Book Consultation</button>
           <Link>
             <i className="bx bx-search-alt-2"></i>
           </Link>
@@ -120,14 +138,21 @@ function Navbar() {
         <div className={`Mobile_close_menu`}>
           <div className="Navmenu_Mobile">
             <ul className={` ${toggle ? "open" : "close"}`}>
-             
               <li>
-                <Link onClick={Click} to="/" className="Navmenu_Navlink Mobile_Navlink" >
+                <Link
+                  onClick={Click}
+                  to="/"
+                  className="Navmenu_Navlink Mobile_Navlink"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/about" className="Navmenu_Navlink Mobile_Navlink">
+                <Link
+                  onClick={Click}
+                  to="/about"
+                  className="Navmenu_Navlink Mobile_Navlink"
+                >
                   About
                 </Link>
               </li>
@@ -137,41 +162,62 @@ function Navbar() {
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               >
-                <Link onClick={Click}
+                <Link
+                  onClick={Click}
                   to="/services"
                   className="Navmenu_Navlink Navlink_Services-2 Mobile_Navlink"
                 >
                   Services
                 </Link>{" "}
-             
               </li>
 
               <li>
-                <Link onClick={Click} to="/portfolio" className="Navmenu_Navlink Mobile_Navlink">
+                <Link
+                  onClick={Click}
+                  to="/portfolio"
+                  className="Navmenu_Navlink Mobile_Navlink"
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/blogs" className="Navmenu_Navlink Mobile_Navlink">
+                <Link
+                  onClick={Click}
+                  to="/blogs"
+                  className="Navmenu_Navlink Mobile_Navlink"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/contact-us" className="Navmenu_Navlink">
+                <Link
+                  onClick={Click}
+                  to="/contact-us"
+                  className="Navmenu_Navlink"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link onClick={Click} to="/" className="Navmenu_Navlink Mobile_Navlink">
+                <Link
+                  onClick={Click}
+                  to="/"
+                  className="Navmenu_Navlink Mobile_Navlink"
+                >
                   Book Consultation
                 </Link>
               </li>
 
-              <li><div className="Nav_Searchtop">
-                <div className=" Nav_Search  ">
-                  <input placeholder="Search...." type="text" />
-                <button><span><IoSearchOutline /></span></button>  
-                </div>
+              <li>
+                <div className="Nav_Searchtop">
+                  <div className=" Nav_Search  ">
+                    <input placeholder="Search...." type="text" />
+                    <button>
+                      <span>
+                        <IoSearchOutline />
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -183,5 +229,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

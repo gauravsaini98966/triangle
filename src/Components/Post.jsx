@@ -7,34 +7,46 @@ import { IoIosArrowForward } from "react-icons/io";
 import DOMPurify from "dompurify";
 
 const truncateTextWithEllipsis = (text) => {
-    return text.length > 100 ? `${text.substring(0, 175)}...` : text;
-  };
-  
-  const addSpacesBetweenTags = (element) => {
-    const result = [];
-    for (const node of element.childNodes) {
-      if (node.nodeType === Node.TEXT_NODE) {
-        result.push(node.textContent);
-      } else if (node.nodeType === Node.ELEMENT_NODE) {
-        result.push(addSpacesBetweenTags(node));
-      }
+  return text.length > 100 ? `${text.substring(0, 175)}...` : text;
+};
+
+const addSpacesBetweenTags = (element) => {
+  const result = [];
+  for (const node of element.childNodes) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      result.push(node.textContent);
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      result.push(addSpacesBetweenTags(node));
     }
-    return result.join(" ");
-  };
-  
-  const processBlogContent = (blogContent) => {
-    const sanitizedHtml = DOMPurify.sanitize(blogContent, { RETURN_DOM: true });
-    const spacedHtml = addSpacesBetweenTags(sanitizedHtml);
-    const plainText = new DOMParser().parseFromString(spacedHtml, "text/html")
-      .body.textContent;
-    const truncatedText = truncateTextWithEllipsis(plainText);
-    return truncatedText;
-  };
-  
+  }
+  return result.join(" ");
+};
+
+const processBlogContent = (blogContent) => {
+  const sanitizedHtml = DOMPurify.sanitize(blogContent, { RETURN_DOM: true });
+  const spacedHtml = addSpacesBetweenTags(sanitizedHtml);
+  const plainText = new DOMParser().parseFromString(spacedHtml, "text/html")
+    .body.textContent;
+  const truncatedText = truncateTextWithEllipsis(plainText);
+  return truncatedText;
+};
+
 const Post = ({ post }) => {
   return (
     <div className="Blogs_Visa_left">
-      <h1>{post.title}</h1>
+      {post.image && (
+        <Link className="blog-thumbnail-hover" to={`/blog/${post._id}`}>
+          <img
+            className="blog-thumbnail"
+            src={`http://localhost:8080/uploads/${post.image}`}
+            alt="Blog Thumbnail"
+          />
+          <span className="overlay"></span>
+        </Link>
+      )}
+      <Link to={`/blog/${post._id}`}>
+        <h1>{post.title}</h1>
+      </Link>
       <div className="Blogs_Visa_2">
         <div className="Blogs_Visa1">
           <span>
@@ -73,13 +85,16 @@ const Post = ({ post }) => {
           __html: processBlogContent(post.content),
         }}
       ></div>
-      <div className="Blogs_Visa_button">
-        <Link to="/">
+      <div style={{ cursor: "pointer" }} className="Blogs_Visa_button">
+        <Link
+          to={`/blog/${post._id}`}
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <button>Continue Reading</button>
+          <span>
+            <IoIosArrowForward />
+          </span>
         </Link>
-        <span>
-          <IoIosArrowForward />
-        </span>
       </div>
     </div>
   );
