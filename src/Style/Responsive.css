@@ -300,6 +300,12 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .Client {
+    display: none;
+  }
+  .mySwiper {
+    display: block !important;
+  }
   .Navbar_logo_1 img {
     max-width: 140px;
   }
