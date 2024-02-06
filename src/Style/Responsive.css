@@ -8,10 +8,10 @@
 }
 
 @media screen and (max-width: 1170px) {
-  .Navmenu_Mobile ul li a{
+  .Navmenu_Mobile ul li a {
     margin: 0px 10px;
   }
-  .Nav_Search{
+  .Nav_Search {
     margin: 0px 10px;
   }
   .aboutmid {
@@ -91,7 +91,6 @@
 }
 
 @media screen and (max-width: 840px) {
-  
   .aboutmid {
     height: auto;
   }
@@ -307,9 +306,6 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .Client {
-    display: none;
-  }
   .mySwiper {
     display: block !important;
   }
@@ -326,9 +322,7 @@
     bottom: 20px;
 
     right: 103px;
-    color: #
-      
-   ;
+    color: #;
   }
   .Contect {
     /* display: flex; 
@@ -430,8 +424,8 @@
     text-align: center;
   }
 }
-.Navmenu_Mobile ul{
-z-index:999;
+.Navmenu_Mobile ul {
+  z-index: 999;
 }
 @media screen and (max-width: 410px) {
   .Website_trafice_bottom1 input {
