@@ -1,8 +1,6 @@
 import React from "react";
 import { Client_top } from "../Data/Client_Data";
 import { Client_bottom } from "../Data/Client_Data";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
