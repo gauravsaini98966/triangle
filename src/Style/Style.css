@@ -294,6 +294,9 @@ height: 450px;
   max-height: 100vh;
   max-width: 100%;
 }
+.mySwiper{
+  display: none !important;
+}
 .Servises_top_right {
   padding: 70px 30px;
 }
