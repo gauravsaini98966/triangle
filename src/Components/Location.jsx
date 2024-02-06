@@ -148,9 +148,7 @@ function Location() {
               Portfolio
             </Link>
           </li>
-          {/* <li>
-            <Link to="/">Terms and Conditions</Link>
-          </li> */}
+         
            <li>
             <Link
               onClick={() => {
@@ -164,11 +162,33 @@ function Location() {
               Terms and Conditions
             </Link>
           </li>
+      
           <li>
-            <Link to="/">Privacy Policy</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/PrivacyPolicy"
+            >
+             Privacy Policy
+            </Link>
           </li>
+
           <li>
-            <Link to="/">Return and Refund Policy</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/ReturnPolicy"
+            >
+              Return and Refund Policy
+            </Link>
           </li>
         </ul>
       </div>

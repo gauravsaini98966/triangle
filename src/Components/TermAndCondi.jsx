@@ -253,7 +253,8 @@ const TermAndCondi = () => {
         <h1>SECTION 20 – CONTACT INFORMATION </h1>
         <p>
           Questions about the Terms of Service should be sent to us at
-       <a href="mailto:info@trianglespace.in" ><span> info@trianglespace.in.</span></a>
+       <a href="mailto:info@trianglespace.in"
+                      ><span> info@trianglespace.in.</span></a>
         </p>
         </div>
 
