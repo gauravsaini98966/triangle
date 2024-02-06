@@ -15,6 +15,7 @@ import BlogPage from "./Pages/BlogPage";
 import TopBar from "./Components/TopBar";
 import SingleBlog from "./Components/SingleBlog";
 import SearchPage from "./Pages/SearchPage";
+import TermAndCondi from '../src/Components/TermAndCondi'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/search-results" element={<SearchPage />} />
         <Route path="/blog/:blogId" element={<SingleBlog />} />
+        <Route path="/TermAndCondi" element={<TermAndCondi />} />
       </Routes>
       <Locations />
       <Fother />
