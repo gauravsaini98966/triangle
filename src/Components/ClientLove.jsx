@@ -1,10 +1,10 @@
 import React from "react";
 import { Client_top } from "../Data/Client_Data";
 import { Client_bottom } from "../Data/Client_Data";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper/core";
+// import { Autoplay } from "swiper/core";
 
 function ClientLove() {
   return (
@@ -44,7 +44,7 @@ function ClientLove() {
           })}
         </div>
       </div>
-      <Swiper
+      {/* <Swiper
         slidesPerView={1}
         spaceBetween={30}
         centeredSlides={true}
@@ -78,7 +78,7 @@ function ClientLove() {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </>
   );
 }
