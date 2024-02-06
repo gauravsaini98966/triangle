@@ -171,7 +171,7 @@ function Location() {
                   behavior: "smooth",
                 });
               }}
-              to="/PrivacyPolicy"
+              to="/privacy-policy"
             >
              Privacy Policy
             </Link>
@@ -185,7 +185,7 @@ function Location() {
                   behavior: "smooth",
                 });
               }}
-              to="/ReturnPolicy"
+              to="/return-policy"
             >
               Return and Refund Policy
             </Link>
