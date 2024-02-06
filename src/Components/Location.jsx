@@ -159,7 +159,7 @@ function Location() {
                   behavior: "smooth",
                 });
               }}
-              to="/TermAndCondi"
+              to="/terms-and-conditions"
             >
               Terms and Conditions
             </Link>
