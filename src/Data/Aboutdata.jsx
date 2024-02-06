@@ -1,7 +1,7 @@
 const Aboutdata = [
   {
     text1: "ABOUT",
-    text2: "triangle Space Private Limited",
+    text2: "Triangle Space Private Limited",
     text3:
       "Triangle Space specializes in Designing Funnel Based strategies and with the help of different marketing platforms like Facebook, Instagram, Google, YouTube, LinkedIn, etc. We provide the best possible strategy for your business.We deeply understand the requirements and needs of the client and provide them with the best SEO services. We provide extensive features and benefits so that our clients can get the best solution.",
     text4a: "Premium Post Designing for Facebook/Insta Ads",
