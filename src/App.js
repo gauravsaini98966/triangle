@@ -31,7 +31,7 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/search-results" element={<SearchPage />} />
         <Route path="/blog/:blogId" element={<SingleBlog />} />
-        <Route path="/TermAndCondi" element={<TermAndCondi />} />
+        <Route path="/terms-and-conditions" element={<TermAndCondi />} />
       </Routes>
       <Locations />
       <Fother />
