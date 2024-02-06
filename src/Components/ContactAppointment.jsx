@@ -150,7 +150,8 @@ function ContactAppointment() {
               </div>
               <div className="Contect_appotment_6">
                 <span>
-                  <a href="/">
+                  <a  href="https://www.facebook.com/trianglespacelimited"
+                      target="_blank">
                     <FaFacebookF />
                   </a>
                 </span>

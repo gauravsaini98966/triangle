@@ -235,6 +235,19 @@
     padding: 60px 40px;
     flex-wrap: wrap;
   }
+  .Web_dev_bottom2 p
+{
+  padding: 10px 0px;
+  color: #575757;
+  font-size: 17px;
+}
+.technology_top h1
+{
+  font-size: 40px;
+  font-weight: 600;
+  color: #fe0000;
+  text-align: center;
+}
 }
 
 @media screen and (max-width: 760px) {
@@ -307,9 +320,9 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .Client {
+  /* .Client {
     display: none;
-  }
+  } */
   .mySwiper {
     display: block !important;
   }
@@ -326,9 +339,7 @@
     bottom: 20px;
 
     right: 103px;
-    color: #
-      
-   ;
+   
   }
   .Contect {
     /* display: flex; 
@@ -354,7 +365,7 @@
   .Web_Dev2 {
     border: 1px solid black;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    min-width: 374px;
+    min-width: 342px;
     padding: 20px 20px;
     border-radius: 10px;
   }
@@ -429,6 +440,12 @@
 
     text-align: center;
   }
+  .Web_dev_bottom2 h1
+{
+  color: #fe0000;
+  font-size: 40px;
+  font-weight: 600;
+}
 }
 .Navmenu_Mobile ul{
 z-index:999;
@@ -448,4 +465,14 @@ z-index:999;
     width: 250px;
     outline: none;
   }
+  @media screen and (max-width: 370px) {
+    .Web_Dev2{
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    padding: 20px 20px;
+    border-radius: 10px;
+  }
+  }
 }
+
