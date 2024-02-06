@@ -156,12 +156,14 @@ function ContactAppointment() {
                   </a>
                 </span>
                 <span>
-                  <a href="/">
+                  <a  href="https://www.instagram.com/trianglespacelimited/"
+                      target="_blank">
                     <FaInstagram />
                   </a>
                 </span>
                 <span>
-                  <a href="/">
+                  <a href="mailto:info@trianglespace.in"
+                      target="_blank">
                     <MdOutlineMail />
                   </a>
                 </span>

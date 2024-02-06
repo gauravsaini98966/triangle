@@ -473,6 +473,13 @@ z-index:999;
     padding: 20px 20px;
     border-radius: 10px;
   }
+  .Website_trafice_bottom1 input
+  {
+      width: 223px;
+      padding: 10px 10px;
+      background-color: #ededed;
+      outline: none;
+    }
   }
 }
 
