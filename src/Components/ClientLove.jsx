@@ -1,84 +1,162 @@
 import React from "react";
-import { Client_top } from "../Data/Client_Data";
-import { Client_bottom } from "../Data/Client_Data";
-// import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-// import { Autoplay } from "swiper/core";
+import "../Style/Client_love.css";
+import double from "../Images/client2.png";
+import Star from "../Images/starr.webp";
+import Avtar from "../Images/avatar.webp";
+import Slider from "react-slick";
+
 
 function ClientLove() {
+
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow:1 ,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         initialSlide: 2
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1
+  //       }
+  //     }
+  //   ]
+  // };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <>
-      <div className="Client">
         <div className="Client_top">
-          {Client_top.map((product, index) => {
-            return (
-              <div key={index} className="Client_top1">
-                <h3>{product.name}</h3>
-                <h2>{product.name2}</h2>
-              </div>
-            );
-          })}
+          <div className="Client_top1">
+            <h3>Client’s love</h3>
+            <h2>Love from Clients</h2>
+          </div>
         </div>
+
+        
+<Slider {...settings}>
         <div className="Client_bottom">
-          {Client_bottom.map((product, index) => {
-            return (
-              <div className="" key={index}>
-                <div className="Client_bottom1">
-                  <img src={product.img} alt="not found" />
-                  <p>{product.p}</p>
 
-                  <div className="Client_bottom_star">
-                    {product.img2.map((star, starindex) => (
-                      <img key={starindex} src={star} alt="" />
-                    ))}
-                  </div>
-                </div>
-                <div className="Owner">
-                  <img src={product.img3} alt="" />
-                  <h2>{product.name}</h2>
-                  <h3>{product.position}</h3>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      {/* <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        centeredSlides={true}
-        rewind={true}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        {Client_bottom.map((product, index) => (
-          <SwiperSlide key={index}>
-            <div className="client-slider">
-              <div className="Client_bottom1">
-                <img src={product.img} alt="not found" />
-                <p>{product.p}</p>
+            <div className="Client_bottom1">
+              <img src={double} alt="not found" />
+              <p>
+                They have designed my b2b eCommerce website for my multi-vendor
+                eCommerce website. Triangle Space is the best multi-vendor
+                eCommerce website developer in Hisar
+              </p>
 
-                <div className="Client_bottom_star">
-                  {product.img2.map((star, starindex) => (
-                    <img key={starindex} src={star} alt="" />
-                  ))}
-                </div>
-              </div>
-              <div className="Owner">
-                <img src={product.img3} alt="" />
-                <h2>{product.name}</h2>
-                <h3>{product.position}</h3>
+              <div className="Client_bottom_star">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
               </div>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
+            {/* <div className="Owner">
+              <img src={Avtar} alt="" />
+              <h2>Narendra Gupt</h2>
+              <h3>Founder</h3>
+            </div> */}
+
+            <div className="Client_bottom1">
+              <img src={double} alt="not found" />
+              <p>
+                They have designed my b2b eCommerce website for my multi-vendor
+                eCommerce website. Triangle Space is the best multi-vendor
+                eCommerce website developer in Hisar
+              </p>
+
+              <div className="Client_bottom_star">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+              </div>
+            </div>
+            {/* <div className="Owner">
+              <img src={Avtar} alt="" />
+              <h2>Narendra Gupt</h2>
+              <h3>Founder</h3>
+            </div> */}
+
+            <div className="Client_bottom1">
+              <img src={double} alt="not found" />
+              <p>
+                They have designed my b2b eCommerce website for my multi-vendor
+                eCommerce website. Triangle Space is the best multi-vendor
+                eCommerce website developer in Hisar
+              </p>
+
+              <div className="Client_bottom_star">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+              </div>
+            </div>
+            {/* <div className="Owner">
+              <img src={Avtar} alt="" />
+              <h2>Narendra Gupt</h2>
+              <h3>Founder</h3>
+            </div> */}
+          </div>
+          </Slider>
+
     </>
   );
 }
