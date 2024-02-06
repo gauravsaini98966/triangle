@@ -148,8 +148,21 @@ function Location() {
               Portfolio
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/">Terms and Conditions</Link>
+          </li> */}
+           <li>
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to="/TermAndCondi"
+            >
+              Terms and Conditions
+            </Link>
           </li>
           <li>
             <Link to="/">Privacy Policy</Link>
