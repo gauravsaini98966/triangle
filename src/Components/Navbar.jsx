@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import ContactForm from "./ContactForm";
+import SearchForm from "./SearchForm";
 function Navbar() {
   const [showServices, setShowServices] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const [searchToggle, setSearchToggle] = useState(false);
 
   const handleMouseOver = () => {
     setShowServices(true);
@@ -18,6 +20,9 @@ function Navbar() {
   };
   function Click() {
     setToggle(!toggle);
+  }
+  function magnifyClick() {
+    setSearchToggle(!searchToggle);
   }
   return (
     <div className="Navbar">
@@ -117,11 +122,29 @@ function Navbar() {
             <ContactForm setToggle={Click} />
           </div>
         )}
+        {searchToggle && (
+          <div
+            style={{
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "rgba(0,0,0,0.8)",
+              position: "fixed",
+              top: "0",
+              left: "0",
+              zIndex: "999",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <SearchForm setSearchToggle={magnifyClick} />
+          </div>
+        )}
         <div className="Navbar_button">
           <button onClick={Click}>Book Consultation</button>
-          <Link>
+          <div onClick={magnifyClick}>
             <i className="bx bx-search-alt-2"></i>
-          </Link>
+          </div>
         </div>
       </div>
 
