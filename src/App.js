@@ -34,9 +34,9 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/search-results" element={<SearchPage />} />
         <Route path="/blog/:blogId" element={<SingleBlog />} />
-        <Route path="/TermAndCondi" element={<TermAndCondi/>} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
-        <Route path="/ReturnPolicy" element={<ReturnPolicy/>} />
+        <Route path="/terms-and-conditions" element={<TermAndCondi />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="/return-policy" element={<ReturnPolicy/>} />
 
       </Routes>
       <Locations />

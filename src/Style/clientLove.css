@@ -1,40 +1,23 @@
-/* #app {
-    height: 100%;
+.slick-prev {
+  display: none !important;
+}
+.slick-next {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .slider-client {
+    display: none;
   }
-  html,
-  body {
-    position: relative;
-    height: 100%;
+}
+@media (max-width: 1024px) {
+  .fix-client {
+    display: none;
   }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
+  .slider-client {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */ 
+  }
+  .Client{
+    padding: 20px;
+  }
+}

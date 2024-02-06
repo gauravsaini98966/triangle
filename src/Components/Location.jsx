@@ -148,8 +148,8 @@ function Location() {
               Portfolio
             </Link>
           </li>
-       
-          <li>
+         
+           <li>
             <Link
               onClick={() => {
                 window.scrollTo({
@@ -157,7 +157,7 @@ function Location() {
                   behavior: "smooth",
                 });
               }}
-              to="/TermAndCondi"
+              to="/terms-and-conditions"
             >
               Terms and Conditions
             </Link>
