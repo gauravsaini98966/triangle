@@ -1,5 +1,4 @@
 import React from "react";
-import BlogsVisa from "../Components/BlogsVisa";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import SearchedBlogs from "../Components/SearchedBlogs";

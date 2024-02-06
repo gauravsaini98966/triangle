@@ -20,7 +20,7 @@ function Blogs() {
         {Blogs_bottom.map((product, index) => {
           return (
             <div key={index} className="Blogs_bottom1">
-              <img className="eyes_image" src={product.img} alt="" />
+              <img className="eyes_image" src={product.img} alt="blog" />
               <div className="eyes">
                 <IoEyeSharp />
               </div>
@@ -29,7 +29,7 @@ function Blogs() {
               <p>{product.p}</p>
               <h3>{product.Read}</h3>
               <div className="Blogs_bottom2">
-                <img src={product.img2} alt="" />
+                <img src={product.img2} alt="blog" />
                 <p>{product.time}</p>
               </div>
             </div>
