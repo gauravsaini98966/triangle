@@ -203,7 +203,7 @@ function Location() {
           </h3>
           <input type="email" placeholder="E.g.john@doe.com" />
           <div>
-            <button>Subscrible</button>
+            <button>Subscribe</button>
           </div>
         </div>
       </div>
